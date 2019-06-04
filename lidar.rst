@@ -61,12 +61,22 @@ Si può addirittura arrivare all'identificazione delle singole specie, anche se 
 Dal processamento dei dati LIDAR ai GIS: applicazioni
 -------------------------------------------------------
 
-Spesso però i dati LIDAR vengono restituiti sulla base di prodotti topografici comunemente noti come:
 
-* il DTM ottenuto dall'ultimo impulso 
+Il risultato *grezzo* di un rilievo LIDAR è una nuvola di punti (dense cloud) che come detto è opportunamente classificabile.
+
+I prodotti più comuni di un rilievo LIDAR possono però essere dei dati raster (vedi immagine) ossia dati  composti da matrici di celle 
+(chiamati anche pixel), ciascuna contenente un valore che rappresenta le condizioni dell’area coperta dalla cella 
+(in questo caso l'altezza del terreno).
+
+.. image:: img/raster.png
+
+In sostanza, spesso i dati LIDAR vengono restituiti sulla base di prodotti topografici comunemente noti come:
+ 
 * il DSM ottenuto invece con il primo impulso ricevuto (DSMFirst) e in taluni casi quello ottenuto con l'ultimo impulso.
+* il DTM ottenuto dall'ultimo impulso che raggiunge il terreno nudo. 
 
 Sono questi prodotti facilmente consultabili con qualunque software GIS. 
+
 
 A titolo di esempio ecco una tile del DSM (DSMFirst) di Regione Veneto nei pressi di Cortina d'Ampezzo:
 
@@ -78,13 +88,21 @@ Ed l'analoga tile con il DTM:
 
 
 
-Calcolo del CHM
+In questa GIF animata è rappresentato sinteticamente il processamento dei dati LIDAR che consente di ottenere prodotti raster a risoluzioni differenti.
+
+.. image:: img/gridding.gif
+
+
+
+Calcolo del CHM in ambiente GIS
 -------------------------------------------------------
 
 A partire da dati raster GIS come il DTM e il DSM può essere nuovamente ricavato il CHM come risultato 
 della sottrazione fra DSM e DTM.
 
 .. image:: img/lidarTree-height.png
+
+
 
 
 Note sul calcolo del CHM
