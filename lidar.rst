@@ -24,7 +24,7 @@ Come funziona il lidar?
 Di fatto il lidar misura il tempo con cui un'onda emessa ritorna alla sorgente dopo essere stata riflessa e, sulla base di questo tempo è in grado di misurare la distanza.
 
 
-.. image: img/LIDAR-scanned-SICK-LMS-animation.gif
+.. image:: img/LIDAR-scanned-SICK-LMS-animation.gif
 
 Fonte: Mike1024_ via Wikimedia Commons
 
@@ -50,7 +50,7 @@ e il DSM ottenuto invece con il primo impulso ricevuto.
 
 Un esempio di risposta letta dal sensore lidar è mostrata nella seguente figura:
 
-.. image: img/waveform.png
+.. image:: img/waveform.png
 
 Source: NEON, Boulder, CO.
 
