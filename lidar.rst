@@ -68,18 +68,42 @@ Spesso però i dati LIDAR vengono restituiti sulla base di prodotti topografici 
 
 Sono questi prodotti facilmente consultabili con qualunque software GIS. 
 
+A titolo di esempio ecco una tile del DSM di Regione Veneto:
+
+.. image:: img/dsm_tile.png
+
+Ed l'analoga tile con il DTM:
+
+.. image:: img/dsm_tile.png
 
 
 
 Calcolo del CHM
 -------------------------------------------------------
 
+A partire da dati raster GIS come il DTM e il DSM può essere nuovamente ricavato il CHM come risultato 
+della sottrazione fra DSM e DTM.
+
+.. image:: img/lidarTree-height.png
 
 
+Note sul calcolo del CHM
+-------------------------------------------------------
+Il CHM così calcolato ovviamente include tutti gli elementi presenti sul terreno incluso ovviamente l'edificato. 
 
 
+A tal proposito in alcuni casi viene fornito sia il DSMFirst che il DSMLast le cui differenze sono pressochè nulle in corrispondenza dell'edificato,
+più consistenti in corrispondenza di vegetazione.
 
+A titolo di esempio si riportano 2 diversi profili realizzati confrontando DSMFirst, DSMLast e DTM per una tile sul centro di Vicenza (Regione Veneto)
 
+* il primo caso è stato realizzato in centro, nei pressi del palazzo comunale e della famosa basilica Palladiana (Link OpenStreetMap: https://osm.org/go/0IBaN62IU--?m=)
+
+.. image:: img/cfr_edifici.png
+
+* il secondo caso è stato realizzato nei pressi della stazione confrontando un area a parco urbano con gli edifici della stazione ferroviaria (Link OpenStreetMap:https://osm.org/go/0IBaM4VaZ--?m=)
+
+.. image:: img/cfr_alberi_stazione.png
 
 
 
