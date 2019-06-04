@@ -16,25 +16,25 @@ Riclassificazione
 * **5-7 metri** : chioma media
 * **>7 metri** : chioma alta
 
-.. image:: img/riclassifica_raster_processing.png
+.. image:: img/riclassifica_raster_processing.PNG
 
 
 
 TODO
 
-.. image:: img/riclassifica_raster.png
+.. image:: img/riclassifica_raster.PNG
 
 
 TODO
 
 
-.. image:: img/tabella_riclassificazione.png
+.. image:: img/tabella_riclassificazione.PNG
 
 
 TODO
 
 
-.. image:: img/simbologia_riclassificata.png
+.. image:: img/simbologia_riclassificata.PNG
 
 
 TODO
