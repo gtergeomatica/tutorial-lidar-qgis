@@ -34,19 +34,7 @@ Fonte: Mike1024_ via Wikimedia Commons
 Grazie all'uso combinato con GPS e IMU è in grado di convertire una misura della distanza con la quota di un oggetto sul terreno.
 
 
-In realtà  l'impulso emesso dal laser genera più di una risposta nel tempo, meglio dedinita con il termine inglese *pulse* o impulso. Graficando il tempo impiegato da ciascun fascio emesso per tornare al sensore e l'energia si possono individuare diversi picchi (definiti appunto *pulse*) che permettono di individuare al meglio la forma degli oggetti presenti sul terreno.
-
-A titolo di esempio, usando i dati LIDAR grezzi si possono ricavare i seguenti indici: 
-
-* Canopy Height
-* Canopy Cover
-* Leaf Area Index
-* Vertical Forest Structure
-* fino ad arrivare addirittura all'identificazione delle singole specie, anche se solo in foreste poco dense e disponendo di un'alta densità di punti
-
-Spesso i dati LIDAR vengono restituiti sulla base di prodotti topografici comunemente noti come il DTM ottenuto dall'ultimo impulso 
-e il DSM ottenuto invece con il primo impulso ricevuto.
-
+In realtà  l'impulso emesso dal laser genera più di una risposta nel tempo, meglio definita con il termine inglese *pulse* o impulso. Graficando il tempo impiegato da ciascun fascio emesso per tornare al sensore e l'energia si possono individuare diversi picchi (definiti appunto *pulse*) che permettono di individuare al meglio la forma degli oggetti presenti sul terreno.
 
 Un esempio di risposta letta dal sensore lidar è mostrata nella seguente figura:
 
@@ -54,24 +42,31 @@ Un esempio di risposta letta dal sensore lidar è mostrata nella seguente figura
 
 Source: NEON, Boulder, CO.
 
+Usando quindi i dati LIDAR grezzi si possono ricavare diversi indici e classificare accuratamente il terreno. A titolo di esempio ecco alcuni indici: 
+
+* Canopy Height
+* Canopy Cover
+* Leaf Area Index
+* Vertical Forest Structure
+
+
+Si può addirittura arrivare all'identificazione delle singole specie, anche se solo in foreste poco dense e disponendo di un'alta densità di punti
+
 
 
 .. _neon science: https://www.neonscience.org/
 
 
 
-Come ottenere i dati LIDAR
---------------------------------------------------------
-
-
-
-
-
-
-
 Dal processamento dei dati LIDAR ai GIS: applicazioni
 -------------------------------------------------------
 
+Spesso però i dati LIDAR vengono restituiti sulla base di prodotti topografici comunemente noti come:
+
+* il DTM ottenuto dall'ultimo impulso 
+* il DSM ottenuto invece con il primo impulso ricevuto.
+
+Sono questi prodotti facilmente consultabili con qualunque software GIS. 
 
 
 
