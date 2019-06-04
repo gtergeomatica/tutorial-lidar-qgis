@@ -64,11 +64,11 @@ Dal processamento dei dati LIDAR ai GIS: applicazioni
 Spesso però i dati LIDAR vengono restituiti sulla base di prodotti topografici comunemente noti come:
 
 * il DTM ottenuto dall'ultimo impulso 
-* il DSM ottenuto invece con il primo impulso ricevuto.
+* il DSM ottenuto invece con il primo impulso ricevuto (DSMFirst) e in taluni casi quello ottenuto con l'ultimo impulso.
 
 Sono questi prodotti facilmente consultabili con qualunque software GIS. 
 
-A titolo di esempio ecco una tile del DSM di Regione Veneto:
+A titolo di esempio ecco una tile del DSM (DSMFirst) di Regione Veneto nei pressi di Cortina d'Ampezzo:
 
 .. image:: img/dsm_tile.png
 
@@ -105,7 +105,10 @@ A titolo di esempio si riportano 2 diversi profili realizzati confrontando DSMFi
 
 .. image:: img/cfr_alberi_stazione.png
 
+Si può notare come:
 
+* la differenza tra DSM e DTM includa ovviamente sia l'edificato che la vegetazione e quindi vada usata con cautela per applicazioni forestali
+* la disponibilità di altri prodotti (es. DSMLast e DSMFirst) possa in qualche modo aiutare l'utente ell'analisi e classificazione dei prodotti ottenuti
 
 
 
