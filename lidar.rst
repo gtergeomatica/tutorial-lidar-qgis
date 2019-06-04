@@ -5,11 +5,18 @@ Cos'è la tecnologia LIDAR
 Definizione
 -------------------------------------------------------
 
-Il LIDAR è una tecnologia attiva di *remote sensing* che consente di che permette di determinare la distanza di un oggetto o di una superficie utilizzando un impulso laser. 
-E' definita una tecnologia *attiva* in quanto, a differenza di altre tecnologie di telerilevamento passive che sfruttano l'energia emessa dal sole (es. sensori ottici) emette una certa energia, sotto forma di un raggio laser, per rtilevare la forma di oggetti. Nella fattispecie il lidar a differenza di tencologie simili quale il radar o il sonar usa poca energia (da qui il termine *light* enettendo un laser con lunghezze d'onda ultraviolette, nel visibile o nel vicino infrarosso.
+Il LIDAR è una tecnologia attiva di *remote sensing* che consente di determinare la distanza di un oggetto o di una superficie utilizzando un impulso 
+laser. 
+
+E' definita una tecnologia *attiva* in quanto, a differenza di altre tecnologie di telerilevamento passive che sfruttano l'energia emessa dal sole 
+(es. sensori ottici) emette una certa energia, sotto forma di un raggio laser, per rilevare la forma di oggetti. Nella fattispecie il lidar 
+a differenza di tencologie simili quale il radar o il sonar usa poca energia (da qui il termine *light* enettendo un laser con lunghezze d'onda 
+ultraviolette, nel visibile o nel vicino infrarosso.
 
 
-In rete si può trovare molto materiale sulla tecnologia LIDAR su sul sisto 'neon science_' (NEON: National Ecological Observatory Network). A titolo di esempio questo questo video vale molto più di mille parole per comprendere cosa sia il lidar, come funzioni e quali sono le principali applicazioni:
+In rete si può trovare molto materiale sulla tecnologia LIDAR su sul sisto 'neon science_' (NEON: National Ecological Observatory Network). 
+A titolo di esempio questo questo video vale molto più di mille parole per comprendere cosa sia il lidar, come funzioni e 
+quali sono le principali applicazioni:
 
 .. raw:: html
 
@@ -74,6 +81,8 @@ I prodotti più comuni di un rilievo LIDAR possono però essere dei dati raster 
 .. image:: img/raster.png
 
 
+
+TODO
 Introdurre / spiegare qualcosa dei dati vettoriali in maniera "strana" perchè son tutti dati vettoriali predisposti per ottenere un raster...
 
 
@@ -84,7 +93,7 @@ Sistemi di riferimento (geografiche o proiettate, classificazione  EPSG)
 
 A questo punto è bene fare una breve panoramica dei CRS (Coordinate Reference System) disponibili in ambiente GIS
 
- 
+TODO
  
  
  
