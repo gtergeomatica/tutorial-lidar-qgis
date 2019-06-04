@@ -5,7 +5,17 @@ Il plugin XXXXX
 
 
 
-Repository github e installazione
+
+Connessione WCS/WMS al portale cartografico
+--------------------------------------------
+
+
+Connessione ai dati regionali 
+--------------------------------------------
+
+ 
+
+Repository github e installazione del plugin
 --------------------------------------------
 
 
@@ -16,7 +26,9 @@ Caratteristiche e funzionamento
 
 
 
-Personalizzazione
+
+
+Prove di elaborazione
 --------------------------------------------
 
 

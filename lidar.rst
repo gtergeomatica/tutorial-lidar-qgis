@@ -14,7 +14,7 @@ In rete si può trovare molto materiale sulla tecnologia LIDAR su sul sisto 'neo
 .. raw:: html
 
 	<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-		<iframe src="https://www.youtube.com/embed/m7SXoFv6Sdc?list=PLiSjSway-kxAcenpAkPwWGy53RVnh3-r3&cc_load_policy=1&cc_lang_pref=en" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe src="https://www.youtube.com/embed/m7SXoFv6Sdc?list=PLiSjSway-kxAcenpAkPwWGy53RVnh3-r3&cc_load_policy=1&cc_lang_pref=en" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 	</div>
 	
 """""""""""""""""""""""""""""""""""""""""""""""
@@ -58,17 +58,40 @@ Si può addirittura arrivare all'identificazione delle singole specie, anche se 
 
 
 
-Dal processamento dei dati LIDAR ai GIS: applicazioni
+Dal processamento dei dati LIDAR ai GIS
 -------------------------------------------------------
-
 
 Il risultato *grezzo* di un rilievo LIDAR è una nuvola di punti (dense cloud) che come detto è opportunamente classificabile.
 
+
+Archiviazione del dato in formato vettoriale (all, xyz, txt, las) o raster (asc, tif)
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ 
 I prodotti più comuni di un rilievo LIDAR possono però essere dei dati raster (vedi immagine) ossia dati  composti da matrici di celle 
 (chiamati anche pixel), ciascuna contenente un valore che rappresenta le condizioni dell’area coperta dalla cella 
 (in questo caso l'altezza del terreno).
 
 .. image:: img/raster.png
+
+
+Introdurre / spiegare qualcosa dei dati vettoriali in maniera "strana" perchè son tutti dati vettoriali predisposti per ottenere un raster...
+
+
+
+
+Sistemi di riferimento (geografiche o proiettate, classificazione  EPSG)
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+A questo punto è bene fare una breve panoramica dei CRS (Coordinate Reference System) disponibili in ambiente GIS
+
+ 
+ 
+ 
+ 
+ 
+
+Elaborazione dei dati – DSM, DTM – Ground,  OverGround -  First Point, Last Point
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 In sostanza, spesso i dati LIDAR vengono restituiti sulla base di prodotti topografici comunemente noti come:
  
