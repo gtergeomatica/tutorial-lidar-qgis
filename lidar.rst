@@ -44,14 +44,15 @@ A titolo di esempio, usando i dati LIDAR grezzi si possono ricavare i seguenti i
 * Vertical Forest Structure
 * fino ad arrivare addirittura all'identificazione delle singole specie, anche se solo in foreste poco dense e disponendo di un'alta densità di punti
 
-Spesso i dati LIDAR vengono restituiti sulla base di prodotti topografici comunemente noti come il DTM ottenuto dall'ultimo impulso e il DSM ottenuto invece con il primo impulso ricevuto.
+Spesso i dati LIDAR vengono restituiti sulla base di prodotti topografici comunemente noti come il DTM ottenuto dall'ultimo impulso 
+e il DSM ottenuto invece con il primo impulso ricevuto.
 
 
+Un esempio di risposta letta dal sensore lidar è mostrata nella seguente figura:
 
+.. image: img/waveform.png
 
-
-
-An example lidar waveform. Source: NEON, Boulder, CO.
+Source: NEON, Boulder, CO.
 
 
 
