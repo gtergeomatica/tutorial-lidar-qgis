@@ -37,6 +37,16 @@ TODO
 .. image:: img/simbologia_riclassificata.png
 
 
+TODO
+
+In immagine si possono visualizzare i risultati della riclassificazione sovrapposti all'ortofoto regionale (2015) 
+
+.. image:: img/chm_riclassificato_no.png
+
+
+.. image:: img/chm_riclassificato.png
+
+
 
 Eventuale vettorializzazione
 -------------------------------------
