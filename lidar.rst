@@ -81,11 +81,23 @@ I prodotti più comuni di un rilievo LIDAR possono però essere dei dati raster 
 .. image:: img/raster.png
 
 
+Una griglia RASTER in ambiente GIS può essere disponibile in una molteplicità di formati gestiti dalla libreria GDAL. Sicuramente i più comuni sono: 
 
-TODO
-Introdurre / spiegare qualcosa dei dati vettoriali in maniera "strana" perchè son tutti dati vettoriali predisposti per ottenere un raster...
+* formato ASCII
+* formato GeoTIFF
+
+Una lista di tutti i possibili formati raster GDAL è disponibile a questo indirizzo: https://gdal.org/drivers/raster/index.html
 
 
+In alcuni casi, al posto di una griglia raster è possibile che i risultati del rilievo LIDAR siano forniti in formato vettoriale: 
+
+* formato ALL
+* formato LAS
+* formato TXT
+* formato XYZ
+
+In tutti i casi si tratta in realtà di file che conterranno le coordinate dei punti del centro di ogni cella e il valore in quota della cella che si leggerebbe anche sul file raster. 
+**In tali casi si consiglia di procedere ad un'immediata interpolazione alla risoluzione desiderata in quanto tali file non possono supportate le operazioni di raster algebra oggetto del presente tutorial**.
 
 
 Sistemi di riferimento (geografiche o proiettate, classificazione  EPSG)
