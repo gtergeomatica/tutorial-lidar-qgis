@@ -26,7 +26,9 @@ Glossario
 
 Credits
 ------------------------------------------
-Il tutorial è stato realizzato da `Gter srl`_  
+Il tutorial è stato realizzato da `Gter srl`_  e distribuito con licenza https://creativecommons.org/licenses/by/4.0/
+
+
 
 Iniziativa finanziata dal Programma di sviluppo rurale per il Veneto 2014-2020 
 Organismo responsabile dell’informazione: GTER Innovazione in Geomatica, GNSS e GIS
