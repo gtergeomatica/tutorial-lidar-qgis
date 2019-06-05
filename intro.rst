@@ -26,7 +26,7 @@ Glossario
 
 Credits
 ------------------------------------------
-Il tutorial è stato realizzato da `Gter srl`_ 
+Il tutorial è stato realizzato da `Gter srl_`  
 
 Iniziativa finanziata dal Programma di sviluppo rurale per il Veneto 2014-2020 
 Organismo responsabile dell’informazione: GTER Innovazione in Geomatica, GNSS e GIS
