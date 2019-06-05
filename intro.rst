@@ -26,8 +26,25 @@ Glossario
 
 Credits
 ------------------------------------------
-Il tutorial è stato realizzato da 'Gter srl'_ grazie ad un finanziamento di Regione Veneto (Direzione AdG FEASR Parchi e Foreste) per la *fornitura di un plugin open source QGIS relativo al calcolo del modello digitale delle chiome delle particelle forestali utilizzando i dati LIDAR rappresentativi del territorio regionale del Veneto*
+Il tutorial è stato realizzato da `Gter srl`_ 
+
+Iniziativa finanziata dal Programma di sviluppo rurale per il Veneto 2014-2020 
+Organismo responsabile dell’informazione: GTER Innovazione in Geomatica, GNSS e GIS
+Autorità di gestione: Regione del Veneto - Direzione AdG FEASR e Foreste 
+
+
+.. image:: img/image_gallery.jpeg
+http://www.avepa.it/
+
+.. image:: img/image_gallery2.png
+http://www.piave.veneto.it/web/guest
+
+.. image:: img/image_gallery3.jpeg
+http://www.venetoagricoltura.org/
+
+.. image:: img/image_gallery4.jpeg
+https://psrveneto.it/
 
 
 
-.. _Gter srl: https://www.gter.it
+.. _Gter srl:: https://www.gter.it
