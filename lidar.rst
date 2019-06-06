@@ -180,7 +180,7 @@ con la sua materializzazione del 2008 (Rete Dinamica Nazionale - RDN) con le ris
 
 Per molte regioni per esempio la suddivisione proposta dai fusi UTM (32, 33 e 34 N) va benissimo
 
-.. image:: img/proiezione0.PNG
+.. image:: img/proiezioni0.PNG
 
 Si è poi definita una proiezione (Fuso Italia) che introduce un fattore di contrazione per minimizzare le deformazioni sull'intero territorio nazionale
 
@@ -225,8 +225,7 @@ I grigliati GK sono disponibili in due tagli: il primo con copertura pari a quel
 (circa 600 km2); il secondo come intorno dei punti IGM95 (circa 300 km2). 
 
 I grigliati Ntv2 sono invece disponibili con per superfici specifiche richieste dall'utente indicando le coordinate dei vertici NE e SO
- dell' area di interesse e hanno un costo a Km².
-*I formati GK1 e GK2 non sono uno standard internazionale, ma una definizione italiana. 
+ dell' area di interesse e hanno un costo a Km². *I formati GK1 e GK2 non sono uno standard internazionale, ma una definizione italiana. 
 Il formato Ntv2 è invece uno standard ed è supportato dalla libreria PROJ.*
 
 
@@ -249,15 +248,15 @@ i seguenti passi:
 	- copiare i parametri del sistema di partenza (si può usare l’apposito tasto) e aggiungere l’opzione +nadgrids=nomefile.gsb
 	A titolo di esempio, volendo convertire i dati da Roma40 a ETRF2000 di dovrà usare un grigliato del tipo R40_F00 e modificare pertanto il SR di partenza (es. EPSG 3003) aggiungendo le informazioni con il grigliato.
        
-	'''
+	
 	Proj4: +proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs
-	'''
+	
 	
 	diventa
 	
-	'''
+	
 	Proj4: +proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +nadgrids=44301020_46501320_R40_F00.gsb +units=m +no_defs
-	'''
+	
 
 Nell'immagine sottostante un esempio della finestra mostrata per la definizione del nuovo SR
 
