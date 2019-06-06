@@ -10,7 +10,7 @@ laser.
 
 E' definita una tecnologia *attiva* in quanto, a differenza di altre tecnologie di telerilevamento passive che sfruttano l'energia emessa dal sole 
 (es. sensori ottici) emette una certa energia, sotto forma di un raggio laser, per rilevare la forma di oggetti. Nella fattispecie il lidar 
-a differenza di tencologie simili quale il radar o il sonar usa poca energia (da qui il termine *light* enettendo un laser con lunghezze d'onda 
+a differenza di tecnologie simili quale il radar o il sonar usa poca energia (da qui il termine *light* emettendo un laser con lunghezze d'onda 
 ultraviolette, nel visibile o nel vicino infrarosso.
 
 
@@ -296,7 +296,7 @@ A titolo di esempio si riportano 2 diversi profili realizzati confrontando DSMFi
 Si può notare come:
 
 * la differenza tra DSM e DTM includa ovviamente sia l'edificato che la vegetazione e quindi vada usata con cautela per applicazioni forestali
-* la disponibilità di altri prodotti (es. DSMLast e DSMFirst) possa in qualche modo aiutare l'utente ell'analisi e classificazione dei prodotti ottenuti
+* la disponibilità di altri prodotti (es. DSMLast e DSMFirst) possa in qualche modo aiutare l'utente nell'analisi e classificazione dei prodotti ottenuti
 
 
 
