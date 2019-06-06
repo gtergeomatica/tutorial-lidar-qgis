@@ -202,15 +202,13 @@ Per la maggior parte dei dati territoriali si tratta pertanto di errori inferior
 Tuttavia al crescere della scala del dato diventa importante assicurare precisioni più elevate. 
 In questi casi esistono le cosiddette materializzazioni dei sistemi di riferimento. Si tratta di una rete di punti per cui si conoscono 
 le coordinate nei vari sistemi di riferimento e che quindi consentono di definire trasformazioni più precise. 
-A partire dalle materializzazioni dei sistemi di riferimento, l’IGM mette a disposizione i cosiddetti “grigliati”. 
+A partire dalle materializzazioni dei sistemi di riferimento, l’IGM mette a disposizione i cosiddetti *grigliati*.
+
 Si tratta di griglie a passo regolare che contengono le differenze, espresse in coordinate geografiche, fra i vari sistemi di coordinate 
 e consentono in tal modo di correggere i normali algoritmi di trasformazione.
+
 La componente altimetrica, quando parte della componente geometrica del dato numerico1, è anch’essa trattata attraverso apposite griglie
- che contengono in tal caso i valori delle separazioni fra geoide nazionale e l’ellissoide GRS80 (adottato nel sistema ETRS89), che consentono,
- con una procedura analoga a quella della planimetria, di trasformare le quote ellissoidiche in quote geoidiche (sul livello del mare),
-ù relative ai riferimenti altimetrici nazionali, e viceversa. Ad oggi l’IGM dispone di due modelli di geoide, entrambi realizzati in collaborazione
- con il Politecnico di Milano: ITALGEO99 e ITALGEO2005, caratterizzati da uno scostamento medio rispetto alle linee di livellazione di alta precisione
- di ± 0.16 e ± 0.04 m rispettivamente.
+che contengono in tal caso i valori delle separazioni fra geoide nazionale e l’ellissoide GRS80 (adottato nel sistema ETRS89), che consentono,  con una procedura analoga a quella della planimetria, di trasformare le quote ellissoidiche in quote geoidiche (sul livello del mare), relative ai riferimenti altimetrici nazionali, e viceversa. Ad oggi l’IGM dispone di due modelli di geoide, entrambi realizzati in collaborazione  con il Politecnico di Milano: ITALGEO99 e ITALGEO2005, caratterizzati da uno scostamento medio rispetto alle linee di livellazione di alta precisione  di ± 0.16 e ± 0.04 m rispettivamente.
  
  
 L’IGM distribuisce pertanto 3 tipi di grigliati:
