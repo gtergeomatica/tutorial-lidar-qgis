@@ -229,11 +229,41 @@ I grigliati Ntv2 sono invece disponibili con per superfici specifiche richieste 
 *I formati GK1 e GK2 non sono uno standard internazionale, ma una definizione italiana. 
 Il formato Ntv2 è invece uno standard ed è supportato dalla libreria PROJ.*
 
-Peraltro... 
+
+I grigliati Ntv2 possono quindi essere usati, su QGIS per convertire i dati da un sistema all'altro. 
+L'IGM fornisce i dati per effettuare le conversioni:
+
+* da datum Roma40 (4265) a:
+	* ETRF2000: file di tipo *XXX_XXX_R40_F00.gsb*
+	* ETRS89: file di tipo *XXX_XXX_R40_F89.gsb*
+	* ED50: file di tipo *XXX_XXX_R40_E50.gsb*
+
+e su richiesta le griglie inverse. 
+
+In sostanza però, a seconda della conversione che si vuole fare, disponendo del grigliato occorre seguire 
+i seguenti passi:
+
+1) copiare il file .gsb con i grigliati nella cartella di sistema usata da QGIS (su windows per esempio è la cartella C:\OSGeo4W64\share\proj)
+2) definire un nuovo CRS customizzato: Settings → Custom projections (Impostazioni → Proiezione personalizzata) Si tratta di 
+	- assegnare un nome al nuovo CRS
+	- copiare i parametri del sistema di partenza (si può usare l’apposito tasto) e aggiungere l’opzione +nadgrids=nomefile.gsb
+	A titolo di esempio, volendo convertire i dati da Roma40 a ETRF2000 di dovrà usare un grigliato del tipo R40_F00 e modificare pertanto il SR di partenza (es. EPSG 3003) aggiungendo le informazioni con il grigliato.
+       
+	'''
+	Proj4: +proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs
+	'''
+	
+	diventa
+	
+	'''
+	Proj4: +proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +nadgrids=44301020_46501320_R40_F00.gsb +units=m +no_defs
+	'''
+
+Nell'immagine sottostante un esempio della finestra mostrata per la definizione del nuovo SR
 
 
-
-Poco o nulla si sa infine di materializzazioni di sistemi di riferimento e grigliati.
+.. image:: img/grigliati.PNG
+ 
  
  
 
