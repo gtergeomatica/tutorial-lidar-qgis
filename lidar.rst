@@ -180,17 +180,17 @@ con la sua materializzazione del 2008 (Rete Dinamica Nazionale - RDN) con le ris
 
 Per molte regioni per esempio la suddivisione proposta dai fusi UTM (32, 33 e 34 N) va benissimo
 
-.. image:: img/proiezione0.png
+.. image:: img/proiezione0.PNG
 
 Si è poi definita una proiezione (Fuso Italia) che introduce un fattore di contrazione per minimizzare le deformazioni sull'intero territorio nazionale
 
-.. image:: img/proiezione1_FI.png
+.. image:: img/proiezione1_FI.PNG
 
 E infine, Regione Veneto, a cui si riferiscono i dati di questo tutorial, che come altre regioni risulta a cavallo fra i fusi UTM e al contempo 
 penalizzata dalla definizione del fuso Italia e dal fattore di contrazione, ha proposto un'ulteriore proiezione (Fuso 12) 
 in grado di minimizzare le deformazioni 
 
-.. image:: img/proiezione2_F12.png
+.. image:: img/proiezione2_F12.PNG
 
 Regione Veneto usa quindi come CRS ufficiale il CRS **ETRF2000 (RDN 2008) - Zona 12 (EPSG 7795)**
 
