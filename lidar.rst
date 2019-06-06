@@ -215,7 +215,7 @@ L’IGM distribuisce pertanto 3 tipi di grigliati:
 
 * Grigliato GK1 che integra il modello di geoide ITALGEO99 (file in formato .gk1);
 * Grigliato GK2 che integra il modello di geoide ITALGEO2005 (file in formato .gk2);
-* Grigliato NTv2 che consente trasformazioni solo planimetriche (file in formato .gsb);.
+* Grigliato NTv2 che consente trasformazioni solo planimetriche (file in formato .gsb).
 
 
 
@@ -223,14 +223,14 @@ I grigliati GK sono disponibili in due tagli: il primo con copertura pari a quel
 (circa 600 km2); il secondo come intorno dei punti IGM95 (circa 300 km2). 
 
 I grigliati Ntv2 sono invece disponibili con per superfici specifiche richieste dall'utente indicando le coordinate dei vertici NE e SO
- dell' area di interesse e hanno un costo a Km². *I formati GK1 e GK2 non sono uno standard internazionale, ma una definizione italiana. 
-Il formato Ntv2 è invece uno standard ed è supportato dalla libreria PROJ.*
+ dell' area di interesse e hanno un costo a Km². Si noti che i formati GK1 e GK2 non sono uno standard internazionale, ma una definizione italiana, mentre il formato Ntv2 è uno standard ed è supportato dalla libreria PROJ4.
 
 
 I grigliati Ntv2 possono quindi essere usati, su QGIS per convertire i dati da un sistema all'altro. 
 L'IGM fornisce i dati per effettuare le conversioni:
 
 * da datum Roma40 (4265) a:
+
 	* ETRF2000: file di tipo *XXX_XXX_R40_F00.gsb*
 	* ETRS89: file di tipo *XXX_XXX_R40_F89.gsb*
 	* ED50: file di tipo *XXX_XXX_R40_E50.gsb*
