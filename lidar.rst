@@ -173,7 +173,67 @@ In grassetto quello “ufficiale”
 
 Tabella2 –  Principali sistemi di coordinate cartografiche (est/nord) usati in ambiente GIS in Italia.
 
+
+la convinzione più comune è che il CRS Roma40 Monte Mario, con proiezione Gauss Boaga (EPSG 3003 e 3004) sia il sistema di riferimento ufficiale, 
+quasi fosse l’unico esistente ed utilizzabile in ambiente GIS. In realtà l'IGM ha stabilito come sistema ufficiale l'ETRF2000 
+con la sua materializzazione del 2008 (Rete Dinamica Nazionale - RDN) con le rispettive proiezioni che variano regione per regione.
+
+Per molte regioni per esempio la suddivisione proposta dai fusi UTM (32, 33 e 34 N) va benissimo
+
+.. image:: img/proiezione0.png
+
+Si è poi definita una proiezione (Fuso Italia) che introduce un fattore di contrazione per minimizzare le deformazioni sull'intero territorio nazionale
+
+.. image:: img/proiezione1_FI.png
+
+E infine, Regione Veneto, a cui si riferiscono i dati di questo tutorial, che come altre regioni risulta a cavallo fra i fusi UTM e al contempo 
+penalizzata dalla definizione del fuso Italia e dal fattore di contrazione, ha proposto un'ulteriore proiezione (Fuso 12) 
+in grado di minimizzare le deformazioni 
+
+.. image:: img/proiezione2_F12.png
+
+Regione Veneto usa quindi come CRS ufficiale il CRS **ETRF2000 (RDN 2008) - Zona 12 (EPSG 7795)**
+
+
+Normalmente le trasformazioni tra sistemi di coordinate avvengono in ambito GIS tramite   operazioni di roto-traslazioni 
+gestite sulla base dei parametri definiti attraverso i codici EPSG, tuttavia queste operazioni valide su tutto il territorio nazionale 
+portano ad imprecisioni dell’ordine metrico. 
+Per la maggior parte dei dati territoriali si tratta pertanto di errori inferiori all’errore di graficismo, quindi del tutto trascurabili. 
+Tuttavia al crescere della scala del dato diventa importante assicurare precisioni più elevate. 
+In questi casi esistono le cosiddette materializzazioni dei sistemi di riferimento. Si tratta di una rete di punti per cui si conoscono 
+le coordinate nei vari sistemi di riferimento e che quindi consentono di definire trasformazioni più precise. 
+A partire dalle materializzazioni dei sistemi di riferimento, l’IGM mette a disposizione i cosiddetti “grigliati”. 
+Si tratta di griglie a passo regolare che contengono le differenze, espresse in coordinate geografiche, fra i vari sistemi di coordinate 
+e consentono in tal modo di correggere i normali algoritmi di trasformazione.
+La componente altimetrica, quando parte della componente geometrica del dato numerico1, è anch’essa trattata attraverso apposite griglie
+ che contengono in tal caso i valori delle separazioni fra geoide nazionale e l’ellissoide GRS80 (adottato nel sistema ETRS89), che consentono,
+ con una procedura analoga a quella della planimetria, di trasformare le quote ellissoidiche in quote geoidiche (sul livello del mare),
+ù relative ai riferimenti altimetrici nazionali, e viceversa. Ad oggi l’IGM dispone di due modelli di geoide, entrambi realizzati in collaborazione
+ con il Politecnico di Milano: ITALGEO99 e ITALGEO2005, caratterizzati da uno scostamento medio rispetto alle linee di livellazione di alta precisione
+ di ± 0.16 e ± 0.04 m rispettivamente.
  
+ 
+L’IGM distribuisce pertanto 3 tipi di grigliati:
+
+* Grigliato GK1 che integra il modello di geoide ITALGEO99 (file in formato .gk1);
+* Grigliato GK2 che integra il modello di geoide ITALGEO2005 (file in formato .gk2);
+* Grigliato NTv2 che consente trasformazioni solo planimetriche (file in formato .gsb);.
+
+
+
+I grigliati GK sono disponibili in due tagli: il primo con copertura pari a quella dei fogli della carta d'Italia alla scala 1:50.000 
+(circa 600 km2); il secondo come intorno dei punti IGM95 (circa 300 km2). 
+
+I grigliati Ntv2 sono invece disponibili con per superfici specifiche richieste dall'utente indicando le coordinate dei vertici NE e SO
+ dell' area di interesse e hanno un costo a Km².
+*I formati GK1 e GK2 non sono uno standard internazionale, ma una definizione italiana. 
+Il formato Ntv2 è invece uno standard ed è supportato dalla libreria PROJ.*
+
+Peraltro... 
+
+
+
+Poco o nulla si sa infine di materializzazioni di sistemi di riferimento e grigliati.
  
  
 
