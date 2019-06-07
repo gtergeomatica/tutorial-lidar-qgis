@@ -17,9 +17,9 @@ Per effettuare tale operazione possono, per esempio essere utili 2 tipi di filtr
 
 * **filtro gaussiano**: dove ogni pixel viene rimpiazzato dalla media pesata dei pixels in un suo intorno, secondo una funzione Gaussiana. Su QGIS è disponibile tramite un modulo di SAGA GIS, altro GIS open source 
 
-.. image:: img/gassian_filter_saga.PNG
+.. image:: img/gaussian_filter_saga.PNG
 
-.. image:: img/gassian_filter_saga2.PNG
+.. image:: img/gaussian_filter_saga2.PNG
 
 * **gdal_sieve (o filtro gdal)** che consiste in uno script che rimuove piccoli poligoni di dimensioni inferiori a un valore di threshold, espresso in numero di celle. Tali valori vengono rimpiazzati con il valore del pixel del poligono più vicino
 
