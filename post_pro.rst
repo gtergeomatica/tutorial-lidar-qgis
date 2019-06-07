@@ -103,6 +103,10 @@ Si può infine procedere alla vettorializzazione:
 
 Altri comandi utili post vettorializzazione potrebbero essere: 
 
+* strumento per ripare le geometrie ottenute dalla vettorializzazione del raster
+
+.. image:: img/fix.PNG
+
 * un'estrazione dei valori >0 (per eliminare le aree senza alberi)
 
 .. image:: img/estrai_attributo.PNG
