@@ -43,6 +43,7 @@ Il plugin CHM from LIDAR è comunque disponibile alla repository github https://
 * Da Qgis menù Plugins --> Gestisci e installa Plugin --> Installa da ZIP
 .. image:: img/installa_zip.png
 Da qui è necessario selezionare tramite il pulsante di navigazione il file ZIP scaricato precedentemente e infine clickare su *Installa Plugin*. Una volta terminata l'installazione il plugin CHM from LIDAR sarà visibile nell'elenco dei plugin installati e l'icona del plugin sarà stata aggiunta automaticamente alla barra degli strumenti.
+
 .. image:: img/installato.png
 
 Una volta che il plugin CHM from LIDAR sarà approvato dal Team di Qgis sarà invece possibile installarlo con la procedura standard per l'installazione dei Plugin di Qgis da menù Plugins --> Gestisci e installa Plugin --> Non Installati
@@ -50,9 +51,7 @@ Una volta che il plugin CHM from LIDAR sarà approvato dal Team di Qgis sarà in
 Caratteristiche e funzionamento
 --------------------------------------------
 Una volta installato il plugin comparirà nella toolbar dei plugin installati l'icon del plugin 
-
 .. image:: img/icon.png
-
 Clickando sull'icona del plugin viene visualizzata l'interfaccia grafica da cui l'utente può definire i parametri di input necessari al calcolo del CHM.
 
 .. image:: img/gui.png
