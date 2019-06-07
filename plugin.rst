@@ -36,6 +36,7 @@ Repository github e installazione del plugin
 Attualmente il plugin CHM from LIDAR è in attesa di approvazione da parte del Team di Qgis, pertanto non è ancora disponibile dalla repository ufficiale di Qgis.
 
 Il plugin CHM from LIDAR è comunque disponibile alla repository github https://github.com/gtergeomatica/chm_from_lidar e può essere scaricato come file .zip e facilmente installato in Qgis seguendo i passi elencati sotto:
+
 * da un qualsiasi browser web andare all'indirizzo https://github.com/gtergeomatica/chm_from_lidar
 * Clickare su **Clone or Download** e successivamente su **Download ZIP** e salvare il file zip in una cartella sul proprio PC
 .. image:: img/download.png
