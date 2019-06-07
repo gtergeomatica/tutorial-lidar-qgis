@@ -39,7 +39,7 @@ Repository github e installazione del plugin
 
 Caratteristiche e funzionamento
 --------------------------------------------
-Una volta installato il plugin comparirà nella toolbar dei plugin installati l'icon del plugin CHM from LIDAR .. image:: img/icon.png
+Una volta installato il plugin comparirà nella toolbar dei plugin installati l'icon del plugin .. image:: img/icon.png
 
 
 
