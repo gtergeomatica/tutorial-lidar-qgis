@@ -2,12 +2,13 @@ Il plugin CHM from LIDAR
 ==================================
 Il Plugin CHM from LIDAR consente la generazione del Canopy Height Model (CHM) a partire da dati Lidar, in particolare DTM e DSM (First Impulse).
 
-I principali input del plugin sono i file DSM e DTM derivanti dalle diverse campagne di volo, dai quali verrà calcolato il CHM, e un file vettoriale (formato GeoPackage) contenente le geometrie degli squadri (tile) che compongono le diverse campagne di rilievo. In particolare quest ultimo viene automaticamente caricato all'interno del progetto Qgis all'avvio del plugin. Qualora invece fosse stato già caricato durante una sessione di lavoro precedente non sarà nuovamente caricato ma verrà semplicemente reso attivo quello già presente.
-Il file vettoriale delle tile, nominato tile_dsm_dtm, contiene nella tabella alfanumerica associata tutte le informazioni necessarie al reperimento dei relativi file DSM e DTM per il calcolo del CHM (percorso ai file, nome del file, nome della campagna, sistema di riferimento, ecc.). Il plugin quindi, sulla base dei parametri di input richiesti dall'utente, sarà in grado di recuperare automaticamente i DSM e DTM delle tile selezionate leggendo tutte le informazioni necessarie (percorso + nome file) dalla tabella associata al file tile_dsm_dtm.
+I principali input del plugin sono i file DSM e DTM derivanti dalle diverse campagne di volo, dai quali verrà calcolato il CHM, e un file vettoriale (formato GeoPackage) contenente le geometrie degli squadri (tile) che compongono le diverse campagne di rilievo. In particolare quest ultimo viene automaticamente caricato all'interno del progetto QGIS all'avvio del plugin. Qualora invece fosse stato già caricato durante una sessione di lavoro precedente non sarà nuovamente caricato ma verrà semplicemente reso attivo quello già presente.
+Il file vettoriale delle tile, nominato *tile_dsm_dtm*, contiene nella tabella alfanumerica associata tutte le informazioni necessarie al reperimento dei relativi file DSM e DTM per il calcolo del CHM (percorso ai file, nome del file, nome della campagna, sistema di riferimento, ecc.). Il plugin quindi, sulla base dei parametri di input richiesti dall'utente, sarà in grado di recuperare automaticamente i DSM e DTM delle tile selezionate leggendo tutte le informazioni necessarie (percorso + nome file) dalla tabella associata al file tile_dsm_dtm.
 
-NB: non rinominare il layer tile_dsm_dtm, il plugin infatti lo attiva automaticamente sulla base del nome. Modificando il nome quindi, il plugin non riconoscerà più il file in oggetto e lo ricaricherà all'interno del progetto.
+NB: non rinominare il layer *tile_dsm_dtm* all'interno del progetto QGIS, il plugin infatti lo richiama automaticamente ogni volta che viene attivato. Qualora si modificasse il nome del layer nel progetto, il plugin non lo riconoscerebbe più e lo ricaricherebbe all'interno del progetto stesso.
 
 Il calcolo del CHM verrà automaticamente processato per tutte le tile selezionate secondo i parametri richiesti dall'utente. E' infatti possibile calcolare il CHM di ogni tile appartenente a una specifica campagna di volo, oppure per tutte le tile che intersecano un Area di Interesse (di seguito AOI) definita dall'utente.
+
 Nel primo caso il CHM di ogni singola tile appartenente alla campagna selezionata sarà calcolato con formato e sistema di riferimento definiti dall'utente e salvato nella cartella di output anch'essa definita dall'utente. Nel secondo caso sarà calcolato il CHM di ogni singola tile che interseca l'AOI specificata e verranno salvati nella cartella di output definita dall'utente con formato e sistema di riferimento richiesto, inoltre verrà anche creato un file raster contenente il ritaglio (clip) dei CHM calcolati sulla boundary dell'AOI specificata. Anche il clip verrà salvato nella cartella di output definita dall'utente con nome, formato e sistema di riferimento desiderati.
 
 Di seguito verranno meglio dettagliati tutte le possibili casistiche, i parametri definibili dall'utente e in generale il workflow del plugin CHM from LIDAR.
@@ -18,45 +19,54 @@ Di seguito verranno meglio dettagliati tutte le possibili casistiche, i parametr
 Connessione WCS/WMS al portale cartografico
 --------------------------------------------
 
-L'Infrastruttura Dati Regionali (IDT) di Regione Veneto è ormai arrivata alla sua versione 2.0
+L'Infrastruttura Dati Regionali (IDT) di Regione Veneto è ormai arrivata alla sua versione 2.0 e accessibile all'inirizzo https://idt2.regione.veneto.it/
 
 
-https://idt2.regione.veneto.it/
+Da li si possono caricare e visualizzare i seguenti servizi:
 
+- servizi OWS (Web Mapping Services, Web Feature Services e volendo Web Coverage Services[1]_) presenti su geoserver regionale: https://idt2-geoserver.regione.veneto.it/geoserver/ows (prevalentemente dati vettoriali o altri dati anche raster che non utilizzano cache)
 
+- servizi WMTS: https://idt2.regione.veneto.it/gwc/service/wmts (Layer raster o che utilizzano la cache es. ortofoto)
 
+- catalogo metadati: https://idt2.regione.veneto.it/geoportal/csw 
+
+.. [1] per ora i geoservizi WCS non sono disponibili
 
 Connessione ai dati regionali 
 --------------------------------------------
+Di default nel file *tile_dsm_dtm* sono inclusi i percorsi alle cartelle dell'infrastruttura di rete regionale (Regione Veneto). E possibile modificarli e personalizzarli con i propri percorsi (se necessario). 
+
+Responsabile dei dati è il dott. Sergio Zen - sergio.zen@regione.veneto.it
+ 
 
  
 
 Repository github e installazione del plugin
 --------------------------------------------
-Attualmente il plugin CHM from LIDAR è in attesa di approvazione da parte del Team di Qgis, pertanto non è ancora disponibile dalla repository ufficiale di Qgis.
+Attualmente il plugin CHM from LIDAR è in attesa di approvazione da parte del Team di QGIS, pertanto non è ancora disponibile dalla repository ufficiale di QGIS.
 
-Il plugin CHM from LIDAR è comunque disponibile alla repository github https://github.com/gtergeomatica/chm_from_lidar e può essere scaricato come file .zip e facilmente installato in Qgis seguendo i passi elencati sotto:
+Il plugin CHM from LIDAR è comunque disponibile alla repository github https://github.com/gtergeomatica/chm_from_lidar e può essere scaricato come file .zip e facilmente installato in QGIS seguendo i passi elencati sotto:
 
 * da un qualsiasi browser web andare all'indirizzo https://github.com/gtergeomatica/chm_from_lidar
 * Clickare su **Clone or Download** e successivamente su **Download ZIP** e salvare il file zip in una cartella sul proprio PC
 .. image:: img/download.png
-* Da Qgis menù Plugins --> Gestisci e installa Plugin --> Installa da ZIP
+* Da QGIS menù Plugins --> Gestisci e installa Plugin --> Installa da ZIP
 .. image:: img/installa_zip.png
 Da qui è necessario selezionare tramite il pulsante di navigazione il file ZIP scaricato precedentemente e infine clickare su *Installa Plugin*. Una volta terminata l'installazione il plugin CHM from LIDAR sarà visibile nell'elenco dei plugin installati e l'icona del plugin sarà stata aggiunta automaticamente alla barra degli strumenti.
 
 .. image:: img/installato.png
 
-Una volta che il plugin CHM from LIDAR sarà approvato dal Team di Qgis sarà invece possibile installarlo con la procedura standard per l'installazione dei Plugin di Qgis da menù Plugins --> Gestisci e installa Plugin --> Non Installati
+Una volta che il plugin CHM from LIDAR sarà approvato dal Team di QGIS sarà invece possibile installarlo con la procedura standard per l'installazione dei Plugin di QGIS da menù Plugins --> Gestisci e installa Plugin --> Non Installati
 
 Caratteristiche e funzionamento
 --------------------------------------------
 Come già anticipato, lo scopo principale del plugin CHM from LIDAR è calcolare il CHM a partire dai dati Lidar (DSM e DTM) ottenuti dalle varie campagne di rilievo che si sono tenuto sul territorio. Il workflow generale del Plugin è composto da:
 
-* Selezione delle tile dal layer vettoriale tile_dsm_dtm (che viene caricato e/o attivato automaticamente nel progetto Qgis all'avvio del plugin) che contiene appunto le tile di tutte le campagne effettuate sul territorio della regione Veneto. Le tile vengono selezionate sulla base dei parametri definiti in input dall'utente. Ad esempio scegliendo la sola campagna di volo verranno selezionate tutte le tile appartenenti a quella campagna, scegliendo una campagna e un'AOI verranno selezionate tutte le tile della campagna richiesta che intersecano l'area di interesse fornita in input. Nel caso in cui venga invece fornita dall'utente la sola AOI verranno selezionate tutte le tile che intersecano l'AOI a prescindere dalla campagna di volo a cui appartengono. In questo caso si potranno verificare diverse situazioni: tutte le tile selezionate appartengono a una sola campagna, le tile selezionate appartengono a campagne diverse ma non c'è sovrapposizione (tile adiacenti), le tile selezionate appartengono a campagne diverse e c'è sovrapposizione (es. campagne svolte in periodi diversi sulla stessa zona). Le tile selezionate verranno salvate su un nuovo layer vettoriale che, a seconda che si tratti di una selezione per sola campagna o per AOI, verrà nominato con il nome della campagna o del file clip oltre che alla data di creazione che permetterà di tenere traccia dei CHM calcolati in precedenza e delle aree di interesse che sono state scelte. Tutte le informazioni relative ai nuovi CHM creati (percorso di salvataggio, nome del file, formato e sistema di riferimento) saranno automaticamente aggiunte nella tabella del layer vettoriale generato dalla selezione delle tile.
+* Selezione delle tile dal layer vettoriale tile_dsm_dtm (che viene caricato e/o attivato automaticamente nel progetto QGIS all'avvio del plugin) che contiene appunto le tile di tutte le campagne effettuate sul territorio della regione Veneto. Le tile vengono selezionate sulla base dei parametri definiti in input dall'utente. Ad esempio scegliendo la sola campagna di volo verranno selezionate tutte le tile appartenenti a quella campagna, scegliendo una campagna e un'AOI verranno selezionate tutte le tile della campagna richiesta che intersecano l'area di interesse fornita in input. Nel caso in cui venga invece fornita dall'utente la sola AOI verranno selezionate tutte le tile che intersecano l'AOI a prescindere dalla campagna di volo a cui appartengono. In questo caso si potranno verificare diverse situazioni: tutte le tile selezionate appartengono a una sola campagna, le tile selezionate appartengono a campagne diverse ma non c'è sovrapposizione (tile adiacenti), le tile selezionate appartengono a campagne diverse e c'è sovrapposizione (es. campagne svolte in periodi diversi sulla stessa zona). Le tile selezionate verranno salvate su un nuovo layer vettoriale che, a seconda che si tratti di una selezione per sola campagna o per AOI, verrà nominato con il nome della campagna o del file clip oltre che alla data di creazione che permetterà di tenere traccia dei CHM calcolati in precedenza e delle aree di interesse che sono state scelte. Tutte le informazioni relative ai nuovi CHM creati (percorso di salvataggio, nome del file, formato e sistema di riferimento) saranno automaticamente aggiunte nella tabella del layer vettoriale generato dalla selezione delle tile.
 
 * Calcolo del CHM per le tile selezionate. Il CHM viene calcolato per ogni singola tile selezionata. I file vengono salvati nella cartella di output definita dall'utente con formato e sistema di riferimento forniti dall'utente tramite il settaggio dei parametri di input dall'interfaccia grafica. In caso la selezione avvenga tramite un'AOI verrà anche generato un file con il ritaglio dei CHM generati sul confine dell'AOI selezionata.
 
-* I risultati finali ovvero i CHM e il clip vengono automaticamente caricati all'interno del progetto Qgis.
+* I risultati finali ovvero i CHM e il clip vengono automaticamente caricati all'interno del progetto QGIS.
 
 Tutti i parametri di input necessari al calcolo del CHM sono settati dall'utente tramite l'interfaccia grafica del plugin che viene visualizzata clickando sull'icona presente nella toolbar una volta avvenuta l'installazione.
 
