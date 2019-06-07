@@ -138,15 +138,15 @@ In grassetto quello “ufficiale”
 +---------------------------+----------------+-----------------------------------------------------------------+ 
 |Datum geodetico            |  Proiezione    | Codice EPSG                                                     |
 +===========================+================+=================================================================+
-| ETRF 2000 (RDN 2008)      | UTM 32N        | 7791                                                            |
+| ETRF 2000 (RDN 2008)      | UTM 32N        | 7791 (6707)                                                          |
 +---------------------------+----------------+-----------------------------------------------------------------+
-| ETRF 2000 (RDN 2008)      | UTM 33N        | 7792                                                            |
+| ETRF 2000 (RDN 2008)      | UTM 33N        | 7792 (6708)                                                            |
 +---------------------------+----------------+-----------------------------------------------------------------+
-| ETRF 2000 (RDN 2008)      | UTM 34N        | 7793                                                            |
+| ETRF 2000 (RDN 2008)      | UTM 34N        | 7793 (6709)                                                            |
 +---------------------------+----------------+-----------------------------------------------------------------+
-| ETRF 2000 (RDN 2008)      | Fuso italia1   | 7794                                                            |
+| ETRF 2000 (RDN 2008)      | Fuso italia1   | 7794 (6875)                                                            |
 +---------------------------+----------------+-----------------------------------------------------------------+
-| ETRF 2000 (RDN 2008)      | Zona 12        | 7795                                                            |
+| ETRF 2000 (RDN 2008)      | Zona 12        | 7795 (6876)                                                            |
 +---------------------------+----------------+-----------------------------------------------------------------+
 | ETRF89/ETRS89             | UTM 32N        | 25832                                                           |
 +---------------------------+----------------+-----------------------------------------------------------------+
@@ -171,7 +171,7 @@ In grassetto quello “ufficiale”
 | WGS84                     | UTM 34N        | 32634                                                           |
 +---------------------------+----------------+-----------------------------------------------------------------+
 
-Tabella2 –  Principali sistemi di coordinate cartografiche (est/nord) usati in ambiente GIS in Italia.
+Tabella2 –  Principali sistemi di coordinate cartografiche (est/nord) usati in ambiente GIS in Italia. I codici EPSG tra parentesi sono codici caratterizzati dagli stessi parametru (datum geodetico e proiezione) se non per l'ordine degli assi che è N-E e non lo standard E-N
 
 
 la convinzione più comune è che il CRS Roma40 Monte Mario, con proiezione Gauss Boaga (EPSG 3003 e 3004) sia il sistema di riferimento ufficiale, 
