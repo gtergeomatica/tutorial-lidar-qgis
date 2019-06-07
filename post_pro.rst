@@ -99,14 +99,17 @@ Eventuale vettorializzazione
 -------------------------------------
 Si può infine procedere alla vettorializzazione:
 
-.. image:: img/vettorializzazione0.png
+.. image:: img/vettorializzazione0.PNG
 
-Altri comandi utili potrebbero essere: 
+Altri comandi utili post vettorializzazione potrebbero essere: 
 
 * un'estrazione dei valori >0 (per eliminare le aree senza alberi)
+
+.. image:: img/estrai_attributo.PNG
+
 * comando v.clean di GRASS
 
+.. image:: img/v_clean.PNG
 
-S
 
 
