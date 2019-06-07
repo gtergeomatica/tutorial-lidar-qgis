@@ -50,6 +50,14 @@ Una volta che il plugin CHM from LIDAR sarà approvato dal Team di Qgis sarà in
 
 Caratteristiche e funzionamento
 --------------------------------------------
+Come già anticipato, lo scopo principale del plugin CHM from LIDAR è calcolare il CHM a partire dai dati Lidar (DSM e DTM) ottenuti dalle varie campagne di rilievo che si sono tenuto sul territorio. Il workflow generale del Plugin è composto da:
+* Selezione delle tile dal layer vettoriale tile_dsm_dtm (che viene caricato e/o attivato automaticamente nel progetto Qgis all'avvio del plugin) che contiene appunto le tile di tutte le campagne effettuate sul territorio della regione Veneto. Le tile vengono selezionate sulla base dei parametri definiti in input dall'utente. Ad esempio scegliendo la sola campagna di volo verranno selezionate tutte le tile appartenenti a quella campagna, scegliendo una campagna e un'AOI verranno selezionate tutte le tile della campagna richiesta che intersecano l'area di interesse fornita in input. Nel caso in cui venga invece fornita dall'utente la sola AOI verranno selezionate tutte le tile che intersecano l'AOI a prescindere dalla campagna di volo a cui appartengono. In questo caso si potranno verificare diverse situazioni:
+** tutte le tile selezionate appartengono a una sola campagna
+** le tile selezionate appartengono a campagne diverse ma non c'è sovrapposizione (tile adiacenti)
+** le tile selezionate appartengono a campagne diverse e c'è sovrapposizione (es. campagne svolte in periodi diversi sulla stessa zona)
+
+
+Il Plugin utilizza appunto il file vettoriale 
 Una volta installato il plugin comparirà nella toolbar dei plugin installati l'icon del plugin
 
 .. image:: img/icon.png
