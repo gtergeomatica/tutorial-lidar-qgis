@@ -49,7 +49,8 @@ Una volta che il plugin CHM from LIDAR sarà approvato dal Team di Qgis sarà in
 
 Caratteristiche e funzionamento
 --------------------------------------------
-Una volta installato il plugin comparirà nella toolbar dei plugin installati l'icon del plugin .. image:: img/icon.png
+Una volta installato il plugin comparirà nella toolbar dei plugin installati l'icon del plugin 
+.. image:: img/icon.png
 
 Clickando sull'icona del plugin viene visualizzata l'interfaccia grafica da cui l'utente può definire i parametri di input necessari al calcolo del CHM.
 .. image:: img/gui.png
