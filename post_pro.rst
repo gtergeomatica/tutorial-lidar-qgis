@@ -35,24 +35,40 @@ La riclassificazione può essere svolta con:
 * l'apposito comando di QGIS (disponibile dalla versione 3.X)
 .. image:: img/tabella_riclassificazione.PNG
 * il comando GRASS r.reclass usando come input un file di testo con il seguente formato
-0  thru  1.99 =  0
-2  thru  4.99 =  2
-5  thru  9.99 =  5
-10 thru 14.99 = 10
-15 thru 19.99 = 15
-20 thru 24.99 = 20
-25 thru 29.99 = 25
-30 thru 100.0 = 30
-* il comando GRASS r.recode
-0:2:0:0
-2:5:2:2
-5:10:5:5
-10:15:10:10
-15:20:15:15
-20:25:20:20
-25:30:25:25
-30:60:30;30
 
+0  thru  1.99 =  0
+
+2  thru  4.99 =  2
+
+5  thru  9.99 =  5
+
+10 thru 14.99 = 10
+
+15 thru 19.99 = 15
+
+20 thru 24.99 = 20
+
+25 thru 29.99 = 25
+
+30 thru 100.0 = 30
+
+* il comando GRASS r.recode
+
+0:2:0:0
+
+2:5:2:2
+
+5:10:5:5
+
+10:15:10:10
+
+15:20:15:15
+
+20:25:20:20
+
+25:30:25:25
+
+30:60:30;30
 
 
 A titolo di esempio si riporta una semplicissima riclassificazione su un CHM non filtrato con una tabella semplificata: 
