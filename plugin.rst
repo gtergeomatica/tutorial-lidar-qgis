@@ -33,7 +33,7 @@ Connessione ai dati regionali
 
 Repository github e installazione del plugin
 --------------------------------------------
-
+Il plugin CHM from LIDAR è disponibile alla repositori github 
 
 
 
