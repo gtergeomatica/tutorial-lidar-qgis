@@ -50,9 +50,11 @@ Una volta che il plugin CHM from LIDAR sarà approvato dal Team di Qgis sarà in
 Caratteristiche e funzionamento
 --------------------------------------------
 Una volta installato il plugin comparirà nella toolbar dei plugin installati l'icon del plugin 
+
 .. image:: img/icon.png
 
 Clickando sull'icona del plugin viene visualizzata l'interfaccia grafica da cui l'utente può definire i parametri di input necessari al calcolo del CHM.
+
 .. image:: img/gui.png
 
 * **1 - Select an AOI:** da qui è possibile selezionare il layer vettoriale contenente le geometrie dell'are di interesse per la quale si desidera calcolare il CHM. Il menù a tendina elenca tutti i layer vettoriali caricati all'interno del progetto corrente, è quindi necessario che il vettoriale contenete l'AOI sia stato già caricato nel progetto Qgis.
