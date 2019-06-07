@@ -52,7 +52,7 @@ La riclassificazione può essere svolta con:
 
 30 thru 100.0 = 30
 
-* il comando GRASS r.recode
+* il comando GRASS r.recode usando come input un file di testo con il seguente formato
 
 0:2:0:0
 
