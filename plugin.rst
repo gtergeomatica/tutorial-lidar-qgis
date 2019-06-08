@@ -107,7 +107,7 @@ Operazioni preliminari
 
 * Caricare il layer **tile_regione_cortina.gpkg**. Di default al caricamento del layer questo viene nominato *tile_regione_cortina tile_dsm_dtm* rinominare il layer in **tile_dsm_dtm**
 
-.. image:: img/rinominare_layer.png
+.. image:: img/rinomina_layer.png
 
 Una volta rinominato il layer, aprire la tabella degli attributi e con l'utilizzo del calcolatore di campi sostituire il contenuto della colonna **P_BASE** con il percorso assoluto alla cartella dati_lidar salvata sul PC
 
@@ -272,6 +272,6 @@ Il plugin blocca il processso e restituisce un messaggio di warning in cui vengo
 
 Clickando nuovamente su OK si avvia il processo di calcolo
 
-.. image:: img/solo_aoi_caso3_war.png
+.. image:: img/solo_aoi_caso3_end.png
 
 In questo caso se l'utente non ha fornito in input un valore di risoluzione verrà utilizzata per generare il clip quella della campagna che è stata selezionata, altrimenti verrà utilizzato il valore fornito.
