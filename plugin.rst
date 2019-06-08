@@ -243,6 +243,7 @@ In questo caso il plugin fa anche un controllo sul sistema di riferimento delle 
 .. image:: img/solo_aoi_caso2_rs.png
 
 **CASO 3**
+
 In questo caso utilizziamo come area di interesse il poligono all'interno del file AOI.shp presente all'interno della cartella **dataset_corso_06_19_venezia**. Si cariche lo shapefile AOI.shp all'interno del progetto Qgis. Si noti che il layer contiene una sola geometria quindi non sarà necessario selezionarla per utilizzarla come area di interesse all'interno del plugin. 
 
 L'area di interesse in questo caso si interseca con la campagna **CAMPAGNA_TEST_SOVRAPPOSIZIONE\Contratto_YYY** creata ad hoc per il corso e a altre campagne che in questo caso però si sovrappongono fra loro.
