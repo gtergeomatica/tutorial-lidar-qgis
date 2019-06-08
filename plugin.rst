@@ -107,7 +107,7 @@ Operazioni preliminari
 
 * Caricare il layer **tile_regione_cortina.gpkg**. Di default al caricamento del layer questo viene nominato *tile_regione_cortina tile_dsm_dtm* rinominare il layer in **tile_dsm_dtm**
 
-.. image:: img/rinominare_layer.png
+.. image:: img/rinomina_layer.png
 
 Una volta rinominato il layer, aprire la tabella degli attributi e con l'utilizzo del calcolatore di campi sostituire il contenuto della colonna **P_BASE** con il percorso assoluto alla cartella dati_lidar salvata sul PC
 
@@ -243,6 +243,7 @@ In questo caso il plugin fa anche un controllo sul sistema di riferimento delle 
 .. image:: img/solo_aoi_caso2_rs.png
 
 **CASO 3**
+
 In questo caso utilizziamo come area di interesse il poligono all'interno del file AOI.shp presente all'interno della cartella **dataset_corso_06_19_venezia**. Si cariche lo shapefile AOI.shp all'interno del progetto Qgis. Si noti che il layer contiene una sola geometria quindi non sarà necessario selezionarla per utilizzarla come area di interesse all'interno del plugin. 
 
 L'area di interesse in questo caso si interseca con la campagna **CAMPAGNA_TEST_SOVRAPPOSIZIONE\Contratto_YYY** creata ad hoc per il corso e a altre campagne che in questo caso però si sovrappongono fra loro.
@@ -272,6 +273,6 @@ Il plugin blocca il processso e restituisce un messaggio di warning in cui vengo
 
 Clickando nuovamente su OK si avvia il processo di calcolo
 
-.. image:: img/solo_aoi_caso3_war.png
+.. image:: img/solo_aoi_caso3_end.png
 
 In questo caso se l'utente non ha fornito in input un valore di risoluzione verrà utilizzata per generare il clip quella della campagna che è stata selezionata, altrimenti verrà utilizzato il valore fornito.
