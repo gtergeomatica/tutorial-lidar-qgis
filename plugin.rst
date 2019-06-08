@@ -184,7 +184,7 @@ Si tratta del caso in cui l'utente voglia calcolare il CHM per una particolare a
 * 2 - l'AOI interseca più campagne di volo non sovrapposte: verranno calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato il clip. In questo caso però verranno fatte in fase di calcolo due controlli, uno sul sistema di riferimento e uno sulla risoluzione. Qualora le campagne abbiano sistema di riferimento diverso il processo si bloccherà restituendo un messaggio di warning e verrà richiesto all'utente di selezionare un sistema di riferimento a meno che non sia stato già selezionato in fase di settaggio dei parametri in input. Qualora invece le campagne di volo abbiano risoluzione diversa e non sia stata definita una risoluzione in input, verrà presa di default quella maggiore.
 * 3 - l'AOI interseca più campagne di volo sovrapposte: il processo si blocca e verrà restituito un messaggio con elencate alcune informazioni relative alle diverse campagne di volo (ente, nome della campagna, anno e risoluzione) e verrà richiesto all'utente di selezionare la campagna per la quale si vuole calcolare il CHM.
 
-**Caso 1**
+**CASO 1**
 
 Si utilizzi la stessa area di interesse del caso precedente che sappiamo intersecare la sola campagna di volo  **2008_2010_Lidar_TEST\Contratto_140**.
 
@@ -209,7 +209,7 @@ Clickando su OK si avvia il processo di calcolo
 
 .. image:: img/solo_aoi_end.png
 
-**Caso 2**
+**CASO 2**
 
 Selezioniamo un'area di interesse che sappiamo intersecare le tile di due campagne differenti che non si sovrappongono. L'area selezionata infatti si sovrappone alle due campagne di volo create ad hoc per il corso, ovvero la **2008_2010_Lidar_TEST\Contratto_140** e la **2019_TEST_CAMPAGNA\Contratto_XXX**.
 
@@ -241,3 +241,5 @@ Si provi a modificare la risoluzione nella tabella del layer *tile_dsm_dtm* per 
 In questo caso il plugin fa anche un controllo sul sistema di riferimento delle diverse campagne che vengono selezionate. Nel caso in cui il sistema di riferimento sia diverso, il processo si blocca e il plugin restituisce un messaggio di warning in cui vengono elencati i sistemi di riferimento trovati e si richiede all'utente di indicare un sistema di riferimento clickando sul tasto CRS. NB: questo particolare caso non è riproducibile in occasione del corso in quanto i dati messi a nostra disposizione hanno tutti lo stesso sistema di riferimento.
 
 .. image:: img/solo_aoi_caso2_rs.png
+
+**CASO 3**
