@@ -123,7 +123,7 @@ Scelta della sola Campagna di Volo
 """"""""""""""""""""""""""""""""""""""""
 Scegliendo la sola campagna di volo, viene calcolato il CHM per ogni tile appartenente alla campagna selezionata.
 
-.. image:: img/solo_campagna.png
+.. image:: img/solo_campagna_bis.png
 
 * Selezionare la campagna **CAMPAGNA_TEST\\Contratto_140** dal menù a tendina *Select a campaign*
 * Scegliere una cartella in cui salvare gli output del processo
@@ -153,7 +153,7 @@ Caricare nel progetto Qgis il file vettoriale della Carta Forestale. Si selezion
 
 In questo caso verranno calcolati i CHM per tutte le tile che intersecano l'area di interesse selezionata.
 
-.. image:: img/aoi_campagna_gui.png
+.. image:: img/aoi_campagna_gui_bis.png
 
 * Selezionare il layer che contiene l'area di interesse **c0605011_categforestali** dal menù a tendina *Select an AOI*
 * Checkare la casella *Using selected features*
