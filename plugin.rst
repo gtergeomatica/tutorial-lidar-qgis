@@ -180,5 +180,30 @@ Scelta della sola Area di interesse
 """"""""""""""""""""""""""""""""""""
 Si tratta del caso in cui l'utente voglia calcolare il CHM per una particolare area di interesse senza però conoscere la campagna o le campagne di volo che la intersecano. In questo caso si potranno verificare tre casistiche che il plugin gestirà in modo diverso:
 
-* 1 - l'AOI interseca una sola campagna di volo: verranno calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato il clip
+* 1 - l'AOI interseca una sola campagna di volo: verranno calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato il clip. In questo caso verrà utilizzata la risoluzione e il sistema di riferimento originari dei dati qualora l'utente non ne abbia settati di diversi. 
 * 2 - l'AOI interseca più campagne di volo non sovrapposte: verranno calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato il clip. In questo caso però verranno fatte in fase di calcolo due controlli, uno sul sistema di riferimento e uno sulla risoluzione. Qualora le campagne abbiano sistema di riferimento diverso il processo si bloccherà restituendo un messaggio di warning e verrà richiesto all'utente di selezionare un sistema di riferimento a meno che non sia stato già selezionato in fase di settaggio dei parametri in input. Qualora invece le campagne di volo abbiano risoluzione diversa e non sia stata definita una risoluzione in input, verrà presa di default quella maggiore.
+* 3 - l'AOI interseca più campagne di volo sovrapposte: il processo si blocca e verrà restituito un messaggio con elencate alcune informazioni relative alle diverse campagne di volo (ente, nome della campagna, anno e risoluzione) e verrà richiesto all'utente di selezionare la campagna per la quale si vuole calcolare il CHM.
+
+** Caso 1 **
+Si utilizzi la stessa area di interesse del caso precedente che sappiamo intersecare la sola campagna di volo  **2008_2010_Lidar_TEST\Contratto_140**.
+
+.. image:: img/solo_aoi_gui.png
+
+* Selezionare il layer che contiene l'area di interesse **c0605011_categforestali** dal menù a tendina *Select an AOI*
+* Checkare la casella *Using selected features*
+* Scegliere un nome per il file clip (senza estensione)
+* Scegliere una cartella in cui salvare gli output del processo
+
+Nel caso della scelta della sola AOI sono abilitate le funzioni che consentono:
+
+* la scelta della risoluzione
+* la scelta del formato file, 
+* la scelta del sistema di riferimento,
+* la rimozione dei valori negativi
+* la rimozione dei valori sopra una certa soglia
+
+**NB:** per quanto riguarda la risoluzione se l'utente non definisce un valore nell'apposita box verrà utilizzata la risoluzione originaria dei dati (DSM e DTM)
+
+Clickando su OK si avvia il processo di calcolo
+
+.. image:: img/solo_aoi_end.png
