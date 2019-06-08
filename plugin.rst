@@ -238,3 +238,6 @@ Si provi a modificare la risoluzione nella tabella del layer *tile_dsm_dtm* per 
 
 .. image:: img/solo_aoi_caso2_maxres.png
 
+In questo caso il plugin fa anche un controllo sul sistema di riferimento delle diverse campagne che vengono selezionate. Nel caso in cui il sistema di riferimento sia diverso, il processo si blocca e il plugin restituisce un messaggio di warning in cui vengono elencati i sistemi di riferimento trovati e si richiede all'utente di indicare un sistema di riferimento clickando sul tasto CRS. NB: questo particolare caso non è riproducibile in occasione del corso in quanto i dati messi a nostra disposizione hanno tutti lo stesso sistema di riferimento.
+
+.. image:: img/solo_aoi_caso2_rs.png
