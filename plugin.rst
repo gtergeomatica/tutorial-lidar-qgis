@@ -184,7 +184,8 @@ Si tratta del caso in cui l'utente voglia calcolare il CHM per una particolare a
 * 2 - l'AOI interseca più campagne di volo non sovrapposte: verranno calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato il clip. In questo caso però verranno fatte in fase di calcolo due controlli, uno sul sistema di riferimento e uno sulla risoluzione. Qualora le campagne abbiano sistema di riferimento diverso il processo si bloccherà restituendo un messaggio di warning e verrà richiesto all'utente di selezionare un sistema di riferimento a meno che non sia stato già selezionato in fase di settaggio dei parametri in input. Qualora invece le campagne di volo abbiano risoluzione diversa e non sia stata definita una risoluzione in input, verrà presa di default quella maggiore.
 * 3 - l'AOI interseca più campagne di volo sovrapposte: il processo si blocca e verrà restituito un messaggio con elencate alcune informazioni relative alle diverse campagne di volo (ente, nome della campagna, anno e risoluzione) e verrà richiesto all'utente di selezionare la campagna per la quale si vuole calcolare il CHM.
 
-** Caso 1 **
+**Caso 1**
+
 Si utilizzi la stessa area di interesse del caso precedente che sappiamo intersecare la sola campagna di volo  **2008_2010_Lidar_TEST\Contratto_140**.
 
 .. image:: img/solo_aoi_gui.png
@@ -208,4 +209,32 @@ Clickando su OK si avvia il processo di calcolo
 
 .. image:: img/solo_aoi_end.png
 
-** Caso 2 **
+**Caso 2**
+
+Selezioniamo un'area di interesse che sappiamo intersecare le tile di due campagne differenti che non si sovrappongono. L'area selezionata infatti si sovrappone alle due campagne di volo create ad hoc per il corso, ovvero la **2008_2010_Lidar_TEST\Contratto_140** e la **2019_TEST_CAMPAGNA\Contratto_XXX**.
+
+.. image:: img/solo_aoi_caso2_gui.png
+
+* Selezionare il layer che contiene l'area di interesse **c0605011_categforestali** dal menù a tendina *Select an AOI*
+* Checkare la casella *Using selected features*
+* Scegliere un nome per il file clip (senza estensione)
+* Scegliere una cartella in cui salvare gli output del processo
+
+Nel caso della scelta della sola AOI sono abilitate le funzioni che consentono:
+
+* la scelta della risoluzione
+* la scelta del formato file, 
+* la scelta del sistema di riferimento,
+* la rimozione dei valori negativi
+* la rimozione dei valori sopra una certa soglia
+
+**NB:** per quanto riguarda la risoluzione se l'utente non definisce un valore nell'apposita box verrà utilizzata la risoluzione originaria dei dati (DSM e DTM). In questo specifico caso però, è possibile che le risoluzioni siano diverse dal momento che le campagne di volo che vengono intersecate sono più di una. Se così fosse il plugin utilizzerà di default la risoluzione minore. Qualora invece l'utente avesse definito una risoluzione come parametro in input verrà ovviamente utilizzata quella definita.
+
+Clickando su OK si avvia il processo di calcolo
+
+.. image:: img/solo_aoi_caso2_end.png
+
+Si provi a modificare la risoluzione nella tabella del layer *tile_dsm_dtm* per almeno una delle tile che vengono intersecate dall'AOI selezionata inserendo un valore maggiore di quello presente in tabella (es. 3). Una volta salvata la modifica alla tabella, si rilanci il processo premendo OK. In questo caso il file di clip verrà creato con una risoluzione pari al valore massimo trovato in tabella per le tile selezionate.
+
+.. image:: img/solo_aoi_caso2_maxres.png
+
