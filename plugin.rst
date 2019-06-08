@@ -97,6 +97,26 @@ In occasione del corso è stato preparato un dataset ridotto che verrà utilizza
 * file c0605011_categforestali.shp: estrazione della Carta Forestale Regionale per il comune di Cortina d'Ampezzo
 * cartella dati_lidar: contiene le sottocartelle relative ad alcune campagne di volo effettuate sul territorio del comune di Cortina d'Ampezzo, in particolare per il corso sono state selezionate solo alcune campagne e un numero limitato di tile per ridurre i tempi di computazione in aula
 
+Operazioni preliminari
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+* Avviare Qgis
+* Installazione del Plugin CHM from LIDAR (si veda sopra)
+* Avviare il Plugin clickando sull'icona che sarà comparsa nella toolbar a installazione avvenuta. Come già descritto, all'avvio del plugin viene automaticamente caricato nel progetto Qgis il file *tile_dsm_dtm* contenente le tile delle diverse campagne di volo effettuato sul territorio regionale. **NB: per il corso verrà utilizzato il file tile_regione_cortina.gpkg, quindi rimuovere dal progetto il layer tile_dsm_dtm**
+
+.. image:: img/rimuovere_layer.png
+
+* Caricare il layer **tile_regione_cortina.gpkg**. Di default al caricamento del layer questo viene nominato *tile_regione_cortina tile_dsm_dtm* rinominare il layer in **tile_dsm_dtm**
+
+.. image:: img/rinominare_layer.png
+
+Una volta rinominato il layer, aprire la tabella degli attributi e con l'utilizzo del calcolatore di campi sostituire il contenuto della colonna **P_BASE** con il percorso assoluto alla cartella dati_lidar salvata sul PC
+
+.. image:: img/tabella_path.png
+
+.. image:: img/path_base.png
+
+**ATTENZIONE alla sintassi!** E' molto importante che il percorso sia scritto correttamente, infatti il contenuto della colonna P_BASE unito alle altre colonne (P_CAMPAGNA, P_DTM e P_DSM) compongono il percorso ai file DSM e DTM che il plugin utilizza per il calcolo del CHM.
+
 
 
 
