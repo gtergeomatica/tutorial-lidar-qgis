@@ -117,6 +117,61 @@ Una volta rinominato il layer, aprire la tabella degli attributi e con l'utilizz
 
 **ATTENZIONE alla sintassi!** E' molto importante che il percorso sia scritto correttamente, infatti il contenuto della colonna P_BASE unito alle altre colonne (P_CAMPAGNA, P_DTM e P_DSM) compongono il percorso ai file DSM e DTM che il plugin utilizza per il calcolo del CHM.
 
+**NB:** queste operazioni preliminari sono richieste solo per il corso, in seguito sarà possibile utilizzare direttamente il file tile_dsm_dtm che viene caricato all'avvio del plugin e che contiene già i percorsi alle cartelle di Regione Veneto.
 
+Scelta della sola Campagna di Volo
+""""""""""""""""""""""""""""""""""""""""
+Scegliendo la sola campagna di volo, viene calcolato il CHM per ogni tile appartenente alla campagna selezionata.
 
+.. image:: img/solo_campagna.png
 
+* Selezionare la campagna **2008_2010_Lidar_TEST\Contratto_140** dal menù a tendina *Select a campaign*
+* Scegliere una cartella in cui salvare gli output del processo
+
+Nel caso della sola campagna di volo sono abilitate le funzioni che consentono:
+
+* la scelta del formato file, 
+* la scelta del sistema di riferimento,
+* la rimozione dei valori negativi
+* la rimozione dei valori sopra una certa soglia
+
+Restano invece disabilitate le funzioni relative al clip e alla scelta della risoluzione con cui crearlo. Infatti non scegliendo un'area di interesse non verrà prodotto alcun ritaglio.
+
+Clickando su OK si avvia il processo di calcolo
+
+.. image:: img/processo_camapagna_terminato.png
+
+I CHM calcolati vengono automaticamente caricati nel progetto Qgis insieme al file vettoriale che contiene le tile per cui è stato calcolato il CHM. Aprendo la tabella di questo layer vettoriale, si nota che all'interno della colonna **P_CHM** è stato automaticamente inserito il percorso alla cartella in cui sono stati salvati i CHM, nella cartella **N_CHM** il nome dei file con relativa estensione del formato e nella colonna **EPSG_CHM** il codice EPSG del sistema di riferimento scelto.
+
+.. image:: img/tabella_campagna.png
+
+Scelta di un'Area di interesse e della Campagna di Volo
+""""""""""""""""""""""""""""""""""""""""
+Caricare nel progetto Qgis il file vettoriale della Carta Forestale. Si selezioni una geometria che rappresenterà l'area di interesse per la quale verrà calcolato il CHM. **NB:** utilizzando un dataset limitato e non avendo quindi a disposizione tutti i file DSM e DTM del territorio di Cortina utilizzeremo un'AOI che sappiamo intersecare la campagna **2008_2010_Lidar_TEST\Contratto_140**
+
+.. image:: img/aoi_campagna.png
+
+In questo caso verranno calcolati i CHM per tutte le tile che intersecano l'area di interesse selezionata.
+
+.. image:: img/aoi_campagna_gui.png
+
+* Selezionare il layer che contiene l'area di interesse **c0605011_categforestali** dal menù a tendina *Select an AOI*
+* Checkare la casella *Using selected features*
+* Selezionare la campagna **2008_2010_Lidar_TEST\Contratto_140** dal menù a tendina *Select a campaign*
+* Scegliere un nome per il file clip (senza estensione)
+* Scegliere una cartella in cui salvare gli output del processo
+
+Nel caso della scelta di un'AOI e della campagna di volo sono abilitate le funzioni che consentono:
+
+* la scelta del formato file, 
+* la scelta del sistema di riferimento,
+* la rimozione dei valori negativi
+* la rimozione dei valori sopra una certa soglia
+
+Resta invece disabilitate le funzione per la scelta della risoluzione con cui creare il file clip, in questo caso infatti il clip verrà creato con la risoluzione originaria della campagna.
+
+Clickando su OK si avvia il processo di calcolo
+
+.. image:: img/aoi_campagna_end.png
+
+I CHM calcolati e il file clip vengono automaticamente caricati nel progetto Qgis insieme al file vettoriale che contiene le tile per cui è stato calcolato il CHM. Anche in questo caso aprendo la tabella di questo layer vettoriale, si nota che all'interno della colonna **P_CHM** è stato automaticamente inserito il percorso alla cartella in cui sono stati salvati i CHM, nella cartella **N_CHM** il nome dei file con relativa estensione del formato e nella colonna **EPSG_CHM** il codice EPSG del sistema di riferimento scelto.
