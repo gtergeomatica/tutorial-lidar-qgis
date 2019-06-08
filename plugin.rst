@@ -207,3 +207,5 @@ Nel caso della scelta della sola AOI sono abilitate le funzioni che consentono:
 Clickando su OK si avvia il processo di calcolo
 
 .. image:: img/solo_aoi_end.png
+
+** Caso 2 **
