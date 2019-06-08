@@ -125,7 +125,7 @@ Scegliendo la sola campagna di volo, viene calcolato il CHM per ogni tile appart
 
 .. image:: img/solo_campagna.png
 
-* Selezionare la campagna **2008_2010_Lidar_TEST\Contratto_140** dal menù a tendina *Select a campaign*
+* Selezionare la campagna **CAMPAGNA_TEST\\Contratto_140** dal menù a tendina *Select a campaign*
 * Scegliere una cartella in cui salvare gli output del processo
 
 Nel caso della sola campagna di volo sono abilitate le funzioni che consentono:
@@ -147,7 +147,7 @@ I CHM calcolati vengono automaticamente caricati nel progetto Qgis insieme al fi
 
 Scelta di un'Area di interesse e della Campagna di Volo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Caricare nel progetto Qgis il file vettoriale della Carta Forestale. Si selezioni una geometria che rappresenterà l'area di interesse per la quale verrà calcolato il CHM. **NB:** utilizzando un dataset limitato e non avendo quindi a disposizione tutti i file DSM e DTM del territorio di Cortina utilizzeremo un'AOI che sappiamo intersecare la campagna **2008_2010_Lidar_TEST\Contratto_140**
+Caricare nel progetto Qgis il file vettoriale della Carta Forestale. Si selezioni una geometria che rappresenterà l'area di interesse per la quale verrà calcolato il CHM. **NB:** utilizzando un dataset limitato e non avendo quindi a disposizione tutti i file DSM e DTM del territorio di Cortina utilizzeremo un'AOI che sappiamo intersecare la campagna **CAMPAGNA_TEST\\Contratto_140**
 
 .. image:: img/aoi_campagna.png
 
@@ -157,7 +157,7 @@ In questo caso verranno calcolati i CHM per tutte le tile che intersecano l'area
 
 * Selezionare il layer che contiene l'area di interesse **c0605011_categforestali** dal menù a tendina *Select an AOI*
 * Checkare la casella *Using selected features*
-* Selezionare la campagna **2008_2010_Lidar_TEST\Contratto_140** dal menù a tendina *Select a campaign*
+* Selezionare la campagna **CAMPAGNA_TEST\\Contratto_140** dal menù a tendina *Select a campaign*
 * Scegliere un nome per il file clip (senza estensione)
 * Scegliere una cartella in cui salvare gli output del processo
 
@@ -186,7 +186,7 @@ Si tratta del caso in cui l'utente voglia calcolare il CHM per una particolare a
 
 **CASO 1**
 
-Si utilizzi la stessa area di interesse del caso precedente che sappiamo intersecare la sola campagna di volo  **2008_2010_Lidar_TEST\Contratto_140**.
+Si utilizzi la stessa area di interesse del caso precedente che sappiamo intersecare la sola campagna di volo  **CAMPAGNA_TEST\\Contratto_140**.
 
 .. image:: img/solo_aoi_gui.png
 
@@ -211,7 +211,7 @@ Clickando su OK si avvia il processo di calcolo
 
 **CASO 2**
 
-Selezioniamo un'area di interesse che sappiamo intersecare le tile di due campagne differenti che non si sovrappongono. L'area selezionata infatti si sovrappone alle due campagne di volo create ad hoc per il corso, ovvero la **2008_2010_Lidar_TEST\Contratto_140** e la **2019_TEST_CAMPAGNA\Contratto_XXX**.
+Selezioniamo un'area di interesse che sappiamo intersecare le tile di due campagne differenti che non si sovrappongono. L'area selezionata infatti si sovrappone alle due campagne di volo create ad hoc per il corso, ovvero la **CAMPAGNA_TEST\\Contratto_140** e la **CAMPAGNA_TEST_ADIACENZA\Contratto_XXX**.
 
 .. image:: img/solo_aoi_caso2_gui.png
 
