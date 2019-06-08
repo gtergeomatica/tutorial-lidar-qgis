@@ -243,3 +243,35 @@ In questo caso il plugin fa anche un controllo sul sistema di riferimento delle 
 .. image:: img/solo_aoi_caso2_rs.png
 
 **CASO 3**
+In questo caso utilizziamo come area di interesse il poligono all'interno del file AOI.shp presente all'interno della cartella **dataset_corso_06_19_venezia**. Si cariche lo shapefile AOI.shp all'interno del progetto Qgis. Si noti che il layer contiene una sola geometria quindi non sarà necessario selezionarla per utilizzarla come area di interesse all'interno del plugin. 
+
+L'area di interesse in questo caso si interseca con la campagna **CAMPAGNA_TEST_SOVRAPPOSIZIONE\Contratto_YYY** creata ad hoc per il corso e a altre campagne che in questo caso però si sovrappongono fra loro.
+
+.. image:: img/solo_aoi_caso3_gui.png
+
+* Selezionare il layer che contiene l'area di interesse **AOI** dal menù a tendina *Select an AOI*
+* La casella *Using selected features* rimarrà disabilitata
+* Scegliere un nome per il file clip (senza estensione)
+* Scegliere una cartella in cui salvare gli output del processo
+
+Nel caso della scelta della sola AOI sono abilitate le funzioni che consentono:
+
+* la scelta della risoluzione
+* la scelta del formato file, 
+* la scelta del sistema di riferimento,
+* la rimozione dei valori negativi
+* la rimozione dei valori sopra una certa soglia
+
+Clickando su OK si avvia il processo di calcolo
+
+.. image:: img/solo_aoi_caso3_war.png
+
+Il plugin blocca il processso e restituisce un messaggio di warning in cui vengono elencate le campagne di volo selezionate. Per ogni campagna viene indicato l'ente, il nome della campagna, l'anno e la risoluzione. Viene quindi richiesto all'utente di selezionare la campagna di volo sulla quale si desidera calcolare il CHM.
+
+* Selezionare la campagna **CAMPAGNA_TEST_SOVRAPPOSIZIONE\Contratto_YYY** dal menù a tendina *Select a campaign*
+
+Clickando nuovamente su OK si avvia il processo di calcolo
+
+.. image:: img/solo_aoi_caso3_war.png
+
+In questo caso se l'utente non ha fornito in input un valore di risoluzione verrà utilizzata per generare il clip quella della campagna che è stata selezionata, altrimenti verrà utilizzato il valore fornito.
