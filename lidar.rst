@@ -9,7 +9,7 @@ Il LIDAR è una tecnologia attiva di *remote sensing* che consente di determinar
 laser. 
 
 E' definita una tecnologia *attiva* in quanto, a differenza di altre tecnologie di telerilevamento passive che sfruttano l'energia emessa dal sole 
-(es. sensori ottici) emette una certa energia, sotto forma di un raggio laser, per rilevare la forma di oggetti. Nella fattispecie il lidar a differenza di tecnologie simili quale il radar o il sonar usa poca energia (da qui il termine *light* emettendo un laser con lunghezze d'onda ultraviolette, nel visibile o nel vicino infrarosso.
+(es. sensori ottici) emette una certa energia, sotto forma di un raggio laser, per rilevare la forma di oggetti. Nella fattispecie il lidar, a differenza di tecnologie simili quali il radar o il sonar, usa poca energia (da qui il termine *light* emettendo un laser con lunghezze d'onda ultraviolette, nel visibile o nel vicino infrarosso.
 
 
 In rete si può trovare molto materiale sulla tecnologia LIDAR su sul sisto 'neon science_' (NEON: National Ecological Observatory Network). 
