@@ -9,13 +9,11 @@ Il LIDAR è una tecnologia attiva di *remote sensing* che consente di determinar
 laser. 
 
 E' definita una tecnologia *attiva* in quanto, a differenza di altre tecnologie di telerilevamento passive che sfruttano l'energia emessa dal sole 
-(es. sensori ottici) emette una certa energia, sotto forma di un raggio laser, per rilevare la forma di oggetti. Nella fattispecie il lidar 
-a differenza di tecnologie simili quale il radar o il sonar usa poca energia (da qui il termine *light* emettendo un laser con lunghezze d'onda 
-ultraviolette, nel visibile o nel vicino infrarosso.
+(es. sensori ottici) emette una certa energia, sotto forma di un raggio laser, per rilevare la forma di oggetti. Nella fattispecie il lidar a differenza di tecnologie simili quale il radar o il sonar usa poca energia (da qui il termine *light* emettendo un laser con lunghezze d'onda ultraviolette, nel visibile o nel vicino infrarosso.
 
 
 In rete si può trovare molto materiale sulla tecnologia LIDAR su sul sisto 'neon science_' (NEON: National Ecological Observatory Network). 
-A titolo di esempio questo questo video vale molto più di mille parole per comprendere cosa sia il lidar, come funzioni e 
+A titolo di esempio questo video vale molto più di mille parole per comprendere cosa sia il lidar, come funzioni e 
 quali sono le principali applicazioni:
 
 .. raw:: html
@@ -28,7 +26,7 @@ quali sono le principali applicazioni:
 
 Come funziona il lidar?
 -----------------------------------------------------
-Di fatto il lidar misura il tempo con cui un'onda emessa ritorna alla sorgente dopo essere stata riflessa e, sulla base di questo tempo è in grado di misurare la distanza.
+Di fatto il lidar misura il tempo con cui un'onda emessa ritorna alla sorgente dopo essere stata riflessa e, sulla base di questo tempo, è in grado di misurare la distanza.
 
 
 .. image:: img/LIDAR-scanned-SICK-LMS-animation.gif
@@ -74,7 +72,7 @@ Il risultato *grezzo* di un rilievo LIDAR è una nuvola di punti (dense cloud) c
 Archiviazione del dato in formato vettoriale (all, xyz, txt, las) o raster (asc, tif)
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
  
-I prodotti più comuni di un rilievo LIDAR possono però essere dei dati raster (vedi immagine) ossia dati  composti da matrici di celle 
+I prodotti più comuni di un rilievo LIDAR possono però essere dei dati raster (vedi immagine) ossia dati composti da matrici di celle 
 (chiamati anche pixel), ciascuna contenente un valore che rappresenta le condizioni dell’area coperta dalla cella 
 (in questo caso l'altezza del terreno).
 
@@ -111,8 +109,6 @@ con l’acronimo inglese CRS (Coordinate Reference System), è sempre un aspetto
 I datum geodetici con i quali sono distribuiti i dati geografici nel nostro paese sono infatti almeno 5 (tabella 1) 
 e se ad essi si aggiungono le proiezioni cartografiche i CRS diventano più del doppio (tabellla 2). 
 
-TODO
-
 +------------------------+----------------+--------------------------------------------------------------------+ 
 |Datum geodetico         |  Codice EPSG   | Note                                                               |
 +========================+================+====================================================================+
@@ -138,15 +134,15 @@ In grassetto quello “ufficiale”
 +---------------------------+----------------+-----------------------------------------------------------------+ 
 |Datum geodetico            |  Proiezione    | Codice EPSG                                                     |
 +===========================+================+=================================================================+
-| ETRF 2000 (RDN 2008)      | UTM 32N        | 7791 (6707)                                                          |
+| ETRF 2000 (RDN 2008)      | UTM 32N        | 7791 (6707)                                                     |
 +---------------------------+----------------+-----------------------------------------------------------------+
-| ETRF 2000 (RDN 2008)      | UTM 33N        | 7792 (6708)                                                            |
+| ETRF 2000 (RDN 2008)      | UTM 33N        | 7792 (6708)                                                     |
 +---------------------------+----------------+-----------------------------------------------------------------+
-| ETRF 2000 (RDN 2008)      | UTM 34N        | 7793 (6709)                                                            |
+| ETRF 2000 (RDN 2008)      | UTM 34N        | 7793 (6709)                                                     |
 +---------------------------+----------------+-----------------------------------------------------------------+
-| ETRF 2000 (RDN 2008)      | Fuso italia1   | 7794 (6875)                                                            |
+| ETRF 2000 (RDN 2008)      | Fuso italia1   | 7794 (6875)                                                     |
 +---------------------------+----------------+-----------------------------------------------------------------+
-| ETRF 2000 (RDN 2008)      | Zona 12        | 7795 (6876)                                                            |
+| ETRF 2000 (RDN 2008)      | Zona 12        | 7795 (6876)                                                     |
 +---------------------------+----------------+-----------------------------------------------------------------+
 | ETRF89/ETRS89             | UTM 32N        | 25832                                                           |
 +---------------------------+----------------+-----------------------------------------------------------------+
@@ -174,7 +170,7 @@ In grassetto quello “ufficiale”
 Tabella2 –  Principali sistemi di coordinate cartografiche (est/nord) usati in ambiente GIS in Italia. I codici EPSG tra parentesi sono codici caratterizzati dagli stessi parametru (datum geodetico e proiezione) se non per l'ordine degli assi che è N-E e non lo standard E-N
 
 
-la convinzione più comune è che il CRS Roma40 Monte Mario, con proiezione Gauss Boaga (EPSG 3003 e 3004) sia il sistema di riferimento ufficiale, 
+La convinzione più comune è che il CRS Roma40 Monte Mario, con proiezione Gauss Boaga (EPSG 3003 e 3004) sia il sistema di riferimento ufficiale, 
 quasi fosse l’unico esistente ed utilizzabile in ambiente GIS. In realtà l'IGM ha stabilito come sistema ufficiale l'ETRF2000 
 con la sua materializzazione del 2008 (Rete Dinamica Nazionale - RDN) con le rispettive proiezioni che variano regione per regione.
 
@@ -186,8 +182,7 @@ Si è poi definita una proiezione (Fuso Italia) che introduce un fattore di cont
 
 .. image:: img/proiezione1_FI.PNG
 
-E infine, Regione Veneto, a cui si riferiscono i dati di questo tutorial, che come altre regioni risulta a cavallo fra i fusi UTM e al contempo 
-penalizzata dalla definizione del fuso Italia e dal fattore di contrazione, ha proposto un'ulteriore proiezione (Fuso 12) 
+E infine, Regione Veneto, a cui si riferiscono i dati di questo tutorial, che come altre regioni risulta a cavallo fra i fusi UTM e al contempo penalizzata dalla definizione del fuso Italia e dal fattore di contrazione, ha proposto un'ulteriore proiezione (Fuso 12) 
 in grado di minimizzare le deformazioni 
 
 .. image:: img/proiezione2_F12.PNG
@@ -195,7 +190,7 @@ in grado di minimizzare le deformazioni
 Regione Veneto usa quindi come CRS ufficiale il CRS **ETRF2000 (RDN 2008) - Zona 12 (EPSG 7795)**
 
 
-Normalmente le trasformazioni tra sistemi di coordinate avvengono in ambito GIS tramite   operazioni di roto-traslazioni 
+Normalmente le trasformazioni tra sistemi di coordinate avvengono in ambito GIS tramite operazioni di roto-traslazioni 
 gestite sulla base dei parametri definiti attraverso i codici EPSG, tuttavia queste operazioni valide su tutto il territorio nazionale 
 portano ad imprecisioni dell’ordine metrico. 
 Per la maggior parte dei dati territoriali si tratta pertanto di errori inferiori all’errore di graficismo, quindi del tutto trascurabili. 
@@ -207,7 +202,7 @@ A partire dalle materializzazioni dei sistemi di riferimento, l’IGM mette a di
 Si tratta di griglie a passo regolare che contengono le differenze, espresse in coordinate geografiche, fra i vari sistemi di coordinate 
 e consentono in tal modo di correggere i normali algoritmi di trasformazione.
 
-La componente altimetrica, quando parte della componente geometrica del dato numerico1, è anch’essa trattata attraverso apposite griglie
+La componente altimetrica, quando parte della componente geometrica del dato numerico, è anch’essa trattata attraverso apposite griglie
 che contengono in tal caso i valori delle separazioni fra geoide nazionale e l’ellissoide GRS80 (adottato nel sistema ETRS89), che consentono,  con una procedura analoga a quella della planimetria, di trasformare le quote ellissoidiche in quote geoidiche (sul livello del mare), relative ai riferimenti altimetrici nazionali, e viceversa. Ad oggi l’IGM dispone di due modelli di geoide, entrambi realizzati in collaborazione  con il Politecnico di Milano: ITALGEO99 e ITALGEO2005, caratterizzati da uno scostamento medio rispetto alle linee di livellazione di alta precisione  di ± 0.16 e ± 0.04 m rispettivamente.
  
  
@@ -220,7 +215,7 @@ L’IGM distribuisce pertanto 3 tipi di grigliati:
 I grigliati GK sono disponibili in due tagli: il primo con copertura pari a quella dei fogli della carta d'Italia alla scala 1:50.000 
 (circa 600 km2); il secondo come intorno dei punti IGM95 (circa 300 km2). 
 
-I grigliati Ntv2 sono invece disponibili con per superfici specifiche richieste dall'utente indicando le coordinate dei vertici NE e SO
+I grigliati Ntv2 sono invece disponibili per superfici specifiche richieste dall'utente indicando le coordinate dei vertici NE e SO
 dell' area di interesse e hanno un costo a Km². Si noti che i formati GK1 e GK2 non sono uno standard internazionale, ma una definizione italiana, mentre il formato Ntv2 è uno standard ed è supportato dalla libreria PROJ4.
 
 I grigliati Ntv2 possono quindi essere usati, su QGIS per convertire i dati da un sistema all'altro. 
@@ -237,10 +232,13 @@ In sostanza però, a seconda della conversione che si vuole fare, disponendo del
 i seguenti passi:
 
 1) copiare il file .gsb con i grigliati nella cartella di sistema usata da QGIS (su windows per esempio è la cartella C:\OSGeo4W64\share\proj)
-2) definire un nuovo CRS customizzato: Settings → Custom projections (Impostazioni → Proiezione personalizzata) Si tratta di 
+2) definire un nuovo CRS customizzato: Settings → Custom projections (Impostazioni → Proiezione personalizzata) 
+
+Si tratta di:
 	- assegnare un nome al nuovo CRS
 	- copiare i parametri del sistema di partenza (si può usare l’apposito tasto) e aggiungere l’opzione +nadgrids=nomefile.gsb
-	A titolo di esempio, volendo convertire i dati da Roma40 a ETRF2000 di dovrà usare un grigliato del tipo R40_F00 e modificare pertanto il SR di partenza (es. EPSG 3003) aggiungendo le informazioni con il grigliato.
+	
+A titolo di esempio, volendo convertire i dati da Roma40 a ETRF2000 si dovrà usare un grigliato del tipo R40_F00 e modificare pertanto il SR di partenza (es. EPSG 3003) aggiungendo le informazioni con il grigliato.
        
 	
 	Proj4: +proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs
