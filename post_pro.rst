@@ -103,7 +103,7 @@ Si può infine procedere alla vettorializzazione:
 
 Altri comandi utili post vettorializzazione potrebbero essere: 
 
-* strumento per ripare le geometrie ottenute dalla vettorializzazione del raster
+* strumento per riparare le geometrie ottenute dalla vettorializzazione del raster
 
 .. image:: img/fix.PNG
 
