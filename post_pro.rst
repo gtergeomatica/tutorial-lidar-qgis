@@ -2,9 +2,9 @@ Classificazione dei risultati e vettorializzazione
 =======================================================
 
 
-Una volta ottenuto il CHM possono essere necessarie alcune operazioni di diverso tipo per ottenere dei risultati più utili a chi si occupa di pianificatori:
+Una volta ottenuto il CHM possono essere necessarie alcune operazioni di diverso tipo per ottenere dei risultati più utili a chi si occupa di pianificazione:
 
-* fitraggio o smoothing del CHM ottenuto
+* filtraggio o smoothing del CHM ottenuto
 * riclassificazione del raster ottenuto 
 * eventuale vettorializzazione del risultato 
 
