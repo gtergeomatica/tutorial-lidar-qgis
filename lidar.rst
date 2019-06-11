@@ -231,7 +231,7 @@ e su richiesta le griglie inverse.
 In sostanza però, a seconda della conversione che si vuole fare, disponendo del grigliato occorre seguire 
 i seguenti passi:
 
-1) copiare il file .gsb con i grigliati nella cartella di sistema usata da QGIS (su windows per esempio è la cartella C:\OSGeo4W64\share\proj)
+1) copiare il file .gsb con i grigliati nelle cartella di sistema usata da QGIS (su windows per esempio è la cartella C:\\OSGeo4W64\\share\\proj oppure C:\\Program Files\\QGISX.X.X\\share\\proj)
 2) definire un nuovo CRS customizzato: Settings → Custom projections (Impostazioni → Proiezione personalizzata) 
 
 Si tratta di:
