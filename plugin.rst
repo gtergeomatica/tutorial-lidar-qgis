@@ -36,7 +36,7 @@ Connessione ai dati regionali
 --------------------------------------------
 Di default nel file *tile_dsm_dtm* sono inclusi i percorsi alle cartelle dell'infrastruttura di rete regionale (Regione Veneto). E possibile modificarli e personalizzarli con i propri percorsi (se necessario). 
 
-Responsabile dei dati è il dott. Sergio Zen - sergio.zen@regione.veneto.it
+Responsabile dei dati è il dott. Umberto Trivelloni (referente dell'Ufficio Cartografico regionale) - umberto.trivelloni@regione.veneto.it
  
 
  
