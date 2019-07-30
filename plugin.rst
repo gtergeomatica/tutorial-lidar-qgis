@@ -13,7 +13,7 @@ Nel primo caso il CHM di ogni singola tile appartenente alla campagna selezionat
 
 Di seguito verranno meglio dettagliati tutte le possibili casistiche, i parametri definibili dall'utente e in generale il workflow del plugin CHM from LIDAR.
 
-
+E' anche disponibile un breve video sul funzionamento del plugin al link https://youtu.be/dZ-jwO-p0Uk
 
 
 Connessione WCS/WMS al portale cartografico
