@@ -21,7 +21,7 @@ E' anche disponibile un breve video sul funzionamento del plugin al link https:/
 		<iframe src="https://www.youtube.com/embed/dZ-jwO-p0Uk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></br>
 	</div>
 
-
+"""""""""""""""""""""""""""""""""""""""""""""""
 
 
 Connessione WCS/WMS al portale cartografico
