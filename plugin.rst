@@ -23,6 +23,7 @@ E' anche disponibile un breve video sul funzionamento del plugin al link https:/
 
 
 
+
 Connessione WCS/WMS al portale cartografico
 --------------------------------------------
 
