@@ -43,7 +43,7 @@ Responsabile dei dati è il dott. Umberto Trivelloni (referente dell'Ufficio Car
 
 Repository github e installazione del plugin
 --------------------------------------------
-Attualmente il plugin CHM from LIDAR è in attesa di approvazione da parte del Team di QGIS, pertanto non è ancora disponibile dalla repository ufficiale di QGIS.
+Il plugin CHM from LIDAR è stato approvato da parte del Team di QGIS, pertanto è disponibile dalla repository ufficiale di QGIS e può essere installato con la procedura standard per l'installazione dei Plugin di QGIS. Da menù Plugins --> Gestisci e installa Plugin --> Non Installati. 
 
 Il plugin CHM from LIDAR è comunque disponibile alla repository github https://github.com/gtergeomatica/chm_from_lidar e può essere scaricato come file .zip e facilmente installato in QGIS seguendo i passi elencati sotto:
 
@@ -56,7 +56,6 @@ Da qui è necessario selezionare tramite il pulsante di navigazione il file ZIP 
 
 .. image:: img/installato.png
 
-Una volta che il plugin CHM from LIDAR sarà approvato dal Team di QGIS sarà invece possibile installarlo con la procedura standard per l'installazione dei Plugin di QGIS da menù Plugins --> Gestisci e installa Plugin --> Non Installati
 
 Caratteristiche e funzionamento
 --------------------------------------------
